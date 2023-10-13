@@ -45,7 +45,7 @@
 
 - Function : 함수 정의와 호출
 - Parameter : 함수 파라미터
-- DefaultValue : 기본값이 설정된 함수 파라미터
+- DefaultParameterValue : 기본값이 설정된 함수 파라미터
 - VariadicParameter : 가변길이 파라미터
 - Overloading : 이름이 같은 함수
 - NestedFunction : 함수 내 함수 정의

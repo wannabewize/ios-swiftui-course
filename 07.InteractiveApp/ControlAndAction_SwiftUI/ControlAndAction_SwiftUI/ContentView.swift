@@ -17,22 +17,31 @@ struct ContentView: View {
     @State var selectedDate: Date = Date()
     
     @State var textInput: String = ""
+    
+    @State var buttonDisabled = false
 
     var body: some View {
         VStack(spacing: 20.0) {
             
             HStack {
                 // Button
-                Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+                Button("Button") {
                     print("버튼 클릭")
                 }
+                .disabled(buttonDisabled)
                 
                 // Button statement
                 Button("Disabled") {
                     print("disabled button clicked!")
+                    
                 }
                 .disabled(true) // 고정된 상수
+                
+                Button("Toggle") {
+                    buttonDisabled.toggle()
+                }
             }
+            
             
             // 상태값(State)을 이용한 값 변경
             Stepper {
@@ -47,10 +56,12 @@ struct ContentView: View {
                 print("editing changed :", done)
             }
             
+            
             // 상태값(State) 바인딩 Binding<Bool>을 이용해서 값과 컨트롤 바인딩
             Toggle(isOn: $toggleValue) {
                 Text("스위치(Toggle) value : \(toggleValue ? "true" : "false")")
             }
+            
             
             HStack {
                 Slider(value: $sliderValue, in: 0.0...10.0, step: 1) {
@@ -113,6 +124,13 @@ struct ContentView: View {
             Spacer()
         }
         .padding()
+        // 상태값 변경 이벤트 핸들러 - 컴포넌트와 별개로 설정
+        .onChange(of: toggleValue) {
+            print("toggle value changed")
+        }
+        .onChange(of: selectedDate) { oldValue, newValue in
+            print("date changed from \(oldValue) to \(newValue)")
+        }
     }
 }
 

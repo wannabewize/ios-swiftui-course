@@ -62,6 +62,10 @@ class ViewController: UIViewController {
         
         slider.minimumValue = 0
         slider.maximumValue = 10
+        
+//        UIButton(configuration: <#T##UIButton.Configuration#>, primaryAction: <#T##UIAction?#>)=
+//        UISwitch(frame: <#T##CGRect#>, primaryAction: <#T##UIAction?#>)
+//        UIStepper(frame: <#T##CGRect#>, primaryAction: <#T##UIAction?#>)
     }
     
     // 버튼에서의 이벤트 핸들러 함수의 파라미터는 Button 객체 ( 이벤트를 발생시킨 객체 )

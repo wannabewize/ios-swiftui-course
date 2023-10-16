@@ -37,8 +37,14 @@ for item in strArray {
     print("For and Array ", item)
 }
 
+// 인덱스와 총 합을 이용한 Loop
 for index in 0..<strArray.count {
     print("For and Array. Index: \(index), Item: \(strArray[index])")
+}
+
+// 개열 원소와 인덱스를 동시에 얻기
+for (index, item) in strArray.enumerated() {
+    print("Array[\(index)] : \(item)")
 }
 
 // 인덱스가 벗어나면 에러 - fatal error: Index out of range

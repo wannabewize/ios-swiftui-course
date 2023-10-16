@@ -30,12 +30,12 @@ print("(two1, two2, two3) = two :", two2)
 let (_, _, korOne) = one
 print("(_, _, korOne) = one :", korOne)
 
-// 투플 간 비교
+// 튜플 간 비교
 print("(1,1) == (1,1) : ",(1, "1") == (1, "1"))
 print("(1, one) < (2, two) : ", (1, "one") < (2, "two"))
 print("(1, one) < (1, first)", (1, "one") < (1, "first"))
 
-// 새로운 튜플에 값 대입 - 복사된다. 밸류타입
+// 새로운 튜플에 대입 - 새로운 튜플 인스턴스가 복사된다. 밸류타입
 var sam = three
 sam.eng = "Third"
 sam.kor = "세번째"

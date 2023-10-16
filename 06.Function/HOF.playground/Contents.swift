@@ -15,7 +15,7 @@ var twiceArray1: [Int] = []
 for item in originArray {
     twiceArray1.append( item * 2)
 }
-print("TWICE RET :", twiceArray1)
+print("twiceArray1 :", twiceArray1)
 
 
 // map을 사용하는 코드. map 내부의 코드가 외부에 영향을 미치지 않는다.
@@ -23,34 +23,35 @@ print("TWICE RET :", twiceArray1)
 let twiceArray2 = originArray.map { item in
     item * 2
 }
-print("TWICE RET2 :", twiceArray2)
+print("twiceArray2 :", twiceArray2)
 
 
 /*
  * Pipeline 만들기
  */
 
-// 배열의 원소 중 값이 홀수만 문자열로 변환하기
-// For로 작성하는 경우, 기존 코드(홀수 고르기)를 수정!해야 하지만 HOF를 사용하는 경우, 기존 코드를 수정할 필요가 없다.
+// 배열의 원소 중 값이 홀수만 2배인 배열 구하기
+// For로 작성하는 경우, 기존 코드를 수정!해야 함
 
-var oddStringArray1: [String] = []
+var twiceArray3: [Int] = []
 
 for item in originArray {
     if item % 2 != 0 {
-        oddStringArray1.append("\(item)")
+        twiceArray3.append(item * 2)
     }
 }
-print("Odd String array1 :", oddStringArray1)
+print("twiceArray3 :", twiceArray3)
 
 // filter와 map으로 구현
+// 기존 코드를 수정할 필요가 없다.
 
-let oddStringArray2 = originArray.filter { item in
+let twiceArray4 = originArray.filter { item in
     item % 2 != 0
 }.map { item in
-    "\(item)"
+    item * 2
 }
 
-print("Odd String array2 :", oddStringArray2)
+print("twiceArray4 :", twiceArray4)
 
 
 // 1개의 값으로 수렴하는 코드

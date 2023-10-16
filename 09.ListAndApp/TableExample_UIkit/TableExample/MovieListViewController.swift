@@ -11,6 +11,10 @@ class MovieListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
@@ -25,5 +29,10 @@ class MovieListViewController: UITableViewController {
         cell.detailTextLabel?.text = item.director
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = movies[indexPath.row]
+        print("Did Select :", item.title)
     }
 }

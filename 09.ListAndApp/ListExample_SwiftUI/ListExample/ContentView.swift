@@ -23,7 +23,9 @@ struct ContentView: View {
                             Text(movie.actor)
                                 .font(.callout)
                         }
-                        
+                    }
+                    .onTapGesture {
+                        print("Cell Touched ", movie.title)
                     }
                 }
             }

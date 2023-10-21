@@ -19,7 +19,7 @@ struct ContentView: View {
     
     @State var selected = Set<String>()
     @State var selectMode = false
-    @State var editMode: EditMode = .inactive
+    @State var listEditMode: EditMode = .inactive
     
     var body: some View {
         NavigationView {
@@ -64,7 +64,8 @@ struct ContentView: View {
                 
                 Button {
                     selectMode.toggle()
-                    print("editMode :", editMode)
+                    
+                    listEditMode = listEditMode.isEditing ? .inactive : .active
                 } label: {
                     Text("Select")
                 }
@@ -73,7 +74,9 @@ struct ContentView: View {
                 
                 TextField("추가하기", text: $newItemInput)
                 
-                Button("취소", role: .cancel) {}
+                Button("취소", role: .cancel) {
+                    // 취소 동작
+                }
                 Button("확인") {
                     if newItemInput.count > 0 {
                         self.data.append(newItemInput)
@@ -82,10 +85,10 @@ struct ContentView: View {
                     isShowingAddDialog = false
                 }
             })
-            // EditButton으로 편집 모드 상태를 State에 바인딩
-            .environment(\.editMode, $editMode)
-            // State의 변경 이벤트
-            .onChange(of: editMode) { oldValue, newValue in
+            // EditButton으로 편집 모드 상태를 listEditMode이름의 State에 바인딩
+            .environment(\.editMode, $listEditMode)
+            // listEditMode State 변경 이벤트
+            .onChange(of: listEditMode) { oldValue, newValue in
                 print("edit mode changed :", newValue)
             }
         }

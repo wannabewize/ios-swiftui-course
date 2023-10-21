@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     
     var data = ["a", "b", "c", "d", "e", "f", "g", "h"]
     
+    // 셀 선택 모드 - 셀 이동 모드와 동시 사용 안하기 위한 프로퍼티
+    var selectMode = false
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func handleAdd(_ sender: Any) {
@@ -33,19 +35,19 @@ class ViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
-    var selectMode = false
+    
     @IBAction func handleSelect(_ sender: UIBarButtonItem) {
         selectMode = !selectMode
         tableView.allowsMultipleSelection = selectMode
         tableView.allowsMultipleSelectionDuringEditing = selectMode
         tableView.isEditing = !tableView.isEditing
         
-        sender.title = selectMode ? "done" : "select"
+        sender.title = selectMode ? "Done" : "Select"
     }
     
     @IBAction func handleEdit(_ sender: UIBarButtonItem) {
         tableView.setEditing(!tableView.isEditing, animated: true)
-        sender.title = tableView.isEditing ? "done" : "edit"
+        sender.title = tableView.isEditing ? "Done" : "Edit"
     }
     
     override func viewDidLoad() {
@@ -91,7 +93,13 @@ extension ViewController: UITableViewDataSource {
     
     // 셀 드래그로 이동. 셀은 사용자 이벤트로 이동된 상태이므로, 데이터만 이동하면 됨
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let item = data.remove(at: sourceIndexPath.row)
-        data.insert(item, at: destinationIndexPath.row)
+        // 삭제 후 새로운 위치에 추가
+//        let item = data.remove(at: sourceIndexPath.row)
+//        data.insert(item, at: destinationIndexPath.row)
+        
+        // move하기. iOS13 이후, sourceIndex가 빠진 상태로 toOffset을 계산해야 함.
+        let toOffset = destinationIndexPath.row + (sourceIndexPath < destinationIndexPath ? 1 : 0)
+        data.move(fromOffsets: IndexSet(integer: sourceIndexPath.row), toOffset: toOffset )
+        print("after move :", data)
     }
 }

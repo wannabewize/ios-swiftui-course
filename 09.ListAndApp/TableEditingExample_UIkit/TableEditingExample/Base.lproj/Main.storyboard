@@ -20,17 +20,18 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilt-BV-Hb0">
                                 <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                                 <items>
-                                    <barButtonItem title="edit" id="Kxa-Tk-zbC">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZjH-Ce-Ua6"/>
+                                    <barButtonItem title="Edit" id="Kxa-Tk-zbC">
                                         <connections>
                                             <action selector="handleEdit:" destination="BYZ-38-t0r" id="rrt-2c-ffV"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="add" id="2VJ-xl-lUP">
+                                    <barButtonItem title="Add" id="2VJ-xl-lUP">
                                         <connections>
                                             <action selector="handleAdd:" destination="BYZ-38-t0r" id="ci3-Qc-6Oc"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="select" id="kVS-m3-B8G">
+                                    <barButtonItem title="Select" id="kVS-m3-B8G">
                                         <connections>
                                             <action selector="handleSelect:" destination="BYZ-38-t0r" id="yT1-fR-TSI"/>
                                         </connections>
@@ -83,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-491" y="84"/>
+            <point key="canvasLocation" x="-526" y="-55"/>
         </scene>
     </scenes>
     <resources>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C376F20269F4CAC001ECE9F /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C376F1F269F4CAC001ECE9F /* MovieListViewController.swift */; };
 		2CC7AEF9268E09CA0029EA82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7AEF8268E09CA0029EA82 /* AppDelegate.swift */; };
 		2CC7AEFB268E09CA0029EA82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7AEFA268E09CA0029EA82 /* SceneDelegate.swift */; };
 		2CC7AEFD268E09CA0029EA82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7AEFC268E09CA0029EA82 /* ViewController.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C376F1F269F4CAC001ECE9F /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		2CC7AEF5268E09CA0029EA82 /* MovieListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC7AEF8268E09CA0029EA82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC7AEFA268E09CA0029EA82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +42,7 @@
 		2CC7AEEC268E09CA0029EA82 = {
 			isa = PBXGroup;
 			children = (
-				2CC7AEF7268E09CA0029EA82 /* TableExample */,
+				2CC7AEF7268E09CA0029EA82 /* TableEditingExample */,
 				2CC7AEF6268E09CA0029EA82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2CC7AEF7268E09CA0029EA82 /* TableExample */ = {
+		2CC7AEF7268E09CA0029EA82 /* TableEditingExample */ = {
 			isa = PBXGroup;
 			children = (
 				2CC7AF11268E0A090029EA82 /* Movie.swift */,
@@ -67,10 +65,9 @@
 				2CC7AEFE268E09CA0029EA82 /* Main.storyboard */,
 				2CC7AF03268E09CB0029EA82 /* LaunchScreen.storyboard */,
 				2CC7AF06268E09CB0029EA82 /* Info.plist */,
-				2C376F1F269F4CAC001ECE9F /* MovieListViewController.swift */,
 				2CCED0A72AD853A9008F2BD3 /* Assets.xcassets */,
 			);
-			path = TableExample;
+			path = TableEditingExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2CC7AEF0268E09CA0029EA82 /* Build configuration list for PBXProject "TableExample" */;
+			buildConfigurationList = 2CC7AEF0268E09CA0029EA82 /* Build configuration list for PBXProject "TableEditingExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC7AEFD268E09CA0029EA82 /* ViewController.swift in Sources */,
-				2C376F20269F4CAC001ECE9F /* MovieListViewController.swift in Sources */,
 				2CC7AEF9268E09CA0029EA82 /* AppDelegate.swift in Sources */,
 				2CC7AEFB268E09CA0029EA82 /* SceneDelegate.swift in Sources */,
 				2CC7AF13268E0A090029EA82 /* Movie.swift in Sources */,
@@ -296,7 +292,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BJJGLWFV9;
-				INFOPLIST_FILE = TableExample/Info.plist;
+				INFOPLIST_FILE = TableEditingExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BJJGLWFV9;
-				INFOPLIST_FILE = TableExample/Info.plist;
+				INFOPLIST_FILE = TableEditingExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CC7AEF0268E09CA0029EA82 /* Build configuration list for PBXProject "TableExample" */ = {
+		2CC7AEF0268E09CA0029EA82 /* Build configuration list for PBXProject "TableEditingExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CC7AF07268E09CB0029EA82 /* Debug */,

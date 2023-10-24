@@ -29,6 +29,8 @@ struct ContentView: View {
                     ForEach(data, id: \.self) { item in
                         Text(item)
                             .moveDisabled(selectMode)
+                            .selectionDisabled(!selectMode)
+                            .deleteDisabled(!selectMode)
                     }
                     .onDelete(perform: { indexSet in
                         data.remove(atOffsets: indexSet)
@@ -37,11 +39,7 @@ struct ContentView: View {
                         data.move(fromOffsets: indices, toOffset: newOffset)
                         print("after move :", data)
                     })
-                    .deleteDisabled(selectMode)
                 }
-                .selectionDisabled(!selectMode)
-                .moveDisabled(selectMode)
-                .deleteDisabled(!selectMode)
                 .listStyle(.plain)
                 // Pull to Refresh : 처음 상태(데이터로 되돌리기)
                 .refreshable {
@@ -52,7 +50,6 @@ struct ContentView: View {
             .padding()
             // 툴바는 NavigationView와 함께 사용해야 함.
             .toolbar {
-                
                 Button {
                     isShowingAddDialog = true
                 } label: {
@@ -62,13 +59,10 @@ struct ContentView: View {
                 // https://developer.apple.com/documentation/swiftui/editbutton
                 EditButton()
                 
-                Button {
-                    selectMode.toggle()
-                    
-                    listEditMode = listEditMode.isEditing ? .inactive : .active
-                } label: {
-                    Text("Select")
-                }
+                Toggle(isOn: $selectMode, label: {
+                    Text(selectMode ? "선택 모드" : "삭제이동 모드")
+                })
+                .toggleStyle(.switch)
             }
             .alert("추가하기", isPresented: $isShowingAddDialog, actions: {
                 

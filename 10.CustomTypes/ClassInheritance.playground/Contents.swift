@@ -22,7 +22,7 @@ class Shape {
 }
 
 // 클래스 상속
-class Rectange: Shape {
+class Rectangle: Shape {
     // 자식 클래스의 stored property
     var width: Int
     var height: Int
@@ -43,10 +43,12 @@ class Rectange: Shape {
 }
 
 
-let rectange = Rectange(width: 10, height: 20)
-print("rectange width: \(rectange.width) \(rectange.height)")
+let rectangle = Rectangle(width: 10, height: 20)
+print("rectangle has \(rectangle.edge) edges")
+print("rectangle width: \(rectangle.width) \(rectangle.height)")
 // 부모 클래스에서 상속받은 함수 사용
-rectange.showHowManyEdge()
+rectangle.showHowManyEdge()
 // 자식 클래스에서 재정의한 함수 사용
-print("rectange size : \(rectange.size())")
+print("rectangle size : \(rectangle.size())")
+
 

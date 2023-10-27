@@ -14,7 +14,7 @@ class Coffee {
     var size : Size
     
     init(name: String, size: Size) {
-        // init 에서 초기화가 필요한 모든 프로퍼티 초기화하기
+        // 초기화가 필요한 모든 프로퍼티 초기화하기
         self.name = name
         self.size = size
     }

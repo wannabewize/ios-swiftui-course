@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ListEditingExample_SwiftUIApp: App {
+struct ListEditingExample_App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

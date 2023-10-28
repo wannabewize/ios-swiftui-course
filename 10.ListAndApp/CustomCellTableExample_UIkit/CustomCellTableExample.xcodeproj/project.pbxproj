@@ -14,6 +14,7 @@
 		2C10B15B2AECF25D00477A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C10B1592AECF25D00477A88 /* LaunchScreen.storyboard */; };
 		2C10B1632AECF3CE00477A88 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C10B1622AECF3CE00477A88 /* CarListViewController.swift */; };
 		2C10B1652AECF9B800477A88 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C10B1642AECF9B800477A88 /* Model.swift */; };
+		2C10B1672AED0C5100477A88 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C10B1662AED0C5100477A88 /* VehicleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2C10B15C2AECF25D00477A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C10B1622AECF3CE00477A88 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
 		2C10B1642AECF9B800477A88 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2C10B1662AED0C5100477A88 /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				2C10B15C2AECF25D00477A88 /* Info.plist */,
 				2C10B1622AECF3CE00477A88 /* CarListViewController.swift */,
 				2C10B1642AECF9B800477A88 /* Model.swift */,
+				2C10B1662AED0C5100477A88 /* VehicleCell.swift */,
 			);
 			path = CustomCellTableExample;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C10B1672AED0C5100477A88 /* VehicleCell.swift in Sources */,
 				2C10B1652AECF9B800477A88 /* Model.swift in Sources */,
 				2C10B14F2AECF25C00477A88 /* AppDelegate.swift in Sources */,
 				2C10B1512AECF25C00477A88 /* SceneDelegate.swift in Sources */,

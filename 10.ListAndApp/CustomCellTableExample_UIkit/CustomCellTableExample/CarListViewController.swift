@@ -7,12 +7,6 @@
 
 import UIKit
 
-class VehicleCell: UITableViewCell {
-    @IBOutlet weak var vehicleImageView: UIImageView!
-    @IBOutlet weak var brandLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var fueltypeImageView: UIImageView!
-}
 
 class CarListViewController: UITableViewController {
 
@@ -33,7 +27,7 @@ class CarListViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "VehicleCell", for: indexPath) as? VehicleCell else {
-            fatalError("No Cell")
+            return UITableViewCell()
         }
         
         let item = data[indexPath.row]

@@ -11,8 +11,6 @@ class ViewController: UIViewController {
     
     var data = ["a", "b", "c", "d", "e", "f", "g", "h"]
     
-    // 셀 선택 모드 - 셀 이동 모드와 동시 사용 안하기 위한 프로퍼티
-    var selectMode = false
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func handleAdd(_ sender: Any) {
@@ -35,15 +33,6 @@ class ViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
-    
-    @IBAction func handleSelect(_ sender: UIBarButtonItem) {
-        selectMode = !selectMode
-        tableView.allowsMultipleSelection = selectMode
-        tableView.allowsMultipleSelectionDuringEditing = selectMode
-        tableView.isEditing = !tableView.isEditing
-        
-        sender.title = selectMode ? "Done" : "Select"
-    }
     
     @IBAction func handleEdit(_ sender: UIBarButtonItem) {
         tableView.setEditing(!tableView.isEditing, animated: true)
@@ -84,10 +73,6 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // 셀 선택 모드에서 셀 이동 막기
-        if selectMode {
-            return false
-        }
         return true
     }
     

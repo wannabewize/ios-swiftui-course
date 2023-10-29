@@ -6,7 +6,7 @@
 import SwiftUI
 
 @main
-struct ListAndDetailAppApp: App {
+struct ListAndDetailApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

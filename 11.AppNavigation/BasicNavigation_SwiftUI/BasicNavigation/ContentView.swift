@@ -34,12 +34,16 @@ struct ContentView: View {
                     }
                 }
                 
-                // navigationDestination과 연결
+                // navigationDestination과 연결 Int.self
                 NavigationLink(value: 111) {
                     Text("111")
                 }
                 NavigationLink(value: 222) {
                     Text("222")
+                }
+                // 대응하는 navigationDestination이 없으므로 동작 없음
+                NavigationLink(value: "333") {
+                    Text("333")
                 }
             }
             // value가 Int 타입인 NavigationLink와 동작

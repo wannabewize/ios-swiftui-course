@@ -16,10 +16,8 @@
 
 ### List and Detail
 
-
-
-
-
+- NavigationStack과 List를 이용해서 목록 뷰에서 상세 뷰 전환
+- UIViewPresentable을 이용해서 UIKit의 뷰(WebView)를 SwiftUI 에서 사용하기
 
 
 ## UIKit
@@ -37,3 +35,7 @@
 - 상세 씬의 웹뷰로 상세 정보 출력
 - 내비게이션 바에 버튼 추가하기
 
+### Tab Based app
+
+- 탭바 컨트롤러를 이용한 병렬 씬 구조
+- 스토리보드 레퍼런스를 이용해서 스토리보드 분리하기

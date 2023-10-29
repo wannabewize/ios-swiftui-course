@@ -11,7 +11,7 @@ struct ContentView: View {
             List {
                 ForEach(data) { vehicle in
                     NavigationLink {
-                        
+                        VehicleDetailView(vehicle: vehicle)
                     } label: {
                         HStack {
                             Image(vehicle.image)

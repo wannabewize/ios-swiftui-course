@@ -24,7 +24,7 @@ extension FuelType {
     }
 }
 
-struct Vehicle: Identifiable {
+struct Vehicle: Identifiable, Hashable {
     var id = UUID()
     var name: String
     var image: String

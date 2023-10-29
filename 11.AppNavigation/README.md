@@ -2,6 +2,16 @@
 
 ## SwiftUI
 
+### Basic Navigation
+
+- NavigationStack 을 이용한 화면 전환
+- 화면 전환 시 데이터 전달하기
+- NavigationPath를 이용해서 NavigationStack 코드로 제어하기
+
+### List and Detail
+
+
+
 
 ## UIKit
 

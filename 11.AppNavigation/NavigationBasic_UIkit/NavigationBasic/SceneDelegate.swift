@@ -1,6 +1,8 @@
 //
 //  SceneDelegate.swift
-//  ListAndDetailApp
+//  NavigationBasic
+//
+//  Created by Jaehoon Lee on 10/29/23.
 //
 
 import UIKit

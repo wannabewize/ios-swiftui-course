@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C853A6D2AEE9BBC00953B4C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C853A6C2AEE9BBC00953B4C /* Model.swift */; };
 		2C85B1E72AEE15D400E1E12F /* ListAndDetailAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85B1E62AEE15D400E1E12F /* ListAndDetailAppApp.swift */; };
 		2C85B1E92AEE15D400E1E12F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85B1E82AEE15D400E1E12F /* ContentView.swift */; };
 		2C85B1EB2AEE15D500E1E12F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C85B1EA2AEE15D500E1E12F /* Assets.xcassets */; };
 		2C85B1EE2AEE15D500E1E12F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C85B1ED2AEE15D500E1E12F /* Preview Assets.xcassets */; };
-		2C85B1F52AEE160500E1E12F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85B1F42AEE160500E1E12F /* Model.swift */; };
 		2C85B1F92AEE2AAD00E1E12F /* NavigationExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85B1F82AEE2AAD00E1E12F /* NavigationExamView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C853A6C2AEE9BBC00953B4C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2C85B1E32AEE15D400E1E12F /* ListAndDetailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListAndDetailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85B1E62AEE15D400E1E12F /* ListAndDetailAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAndDetailAppApp.swift; sourceTree = "<group>"; };
 		2C85B1E82AEE15D400E1E12F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C85B1EA2AEE15D500E1E12F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C85B1ED2AEE15D500E1E12F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2C85B1F42AEE160500E1E12F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../../10.ListAndApp/CustomCellTableExample_UIkit/CustomCellTableExample/Model.swift; sourceTree = "<group>"; };
 		2C85B1F82AEE2AAD00E1E12F /* NavigationExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExamView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 			children = (
 				2C85B1E62AEE15D400E1E12F /* ListAndDetailAppApp.swift */,
 				2C85B1E82AEE15D400E1E12F /* ContentView.swift */,
-				2C85B1F42AEE160500E1E12F /* Model.swift */,
+				2C853A6C2AEE9BBC00953B4C /* Model.swift */,
 				2C85B1EA2AEE15D500E1E12F /* Assets.xcassets */,
 				2C85B1EC2AEE15D500E1E12F /* Preview Content */,
 				2C85B1F82AEE2AAD00E1E12F /* NavigationExamView.swift */,
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C85B1F52AEE160500E1E12F /* Model.swift in Sources */,
+				2C853A6D2AEE9BBC00953B4C /* Model.swift in Sources */,
 				2C85B1E92AEE15D400E1E12F /* ContentView.swift in Sources */,
 				2C85B1F92AEE2AAD00E1E12F /* NavigationExamView.swift in Sources */,
 				2C85B1E72AEE15D400E1E12F /* ListAndDetailAppApp.swift in Sources */,
@@ -292,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.example.swiftui.ListAndDetailApp;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.example.swiftui.ListAndDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.example.swiftui.ListAndDetailApp;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.example.swiftui.ListAndDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

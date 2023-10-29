@@ -8,7 +8,16 @@
 - 화면 전환 시 데이터 전달하기
 - NavigationPath를 이용해서 NavigationStack 코드로 제어하기
 
+### Shared DataModel
+
+- Observable과 Publish 를 이용한 공유 데이터 모델 정의
+- ObservedObject를 이용해서 공유 데이터 접근하기
+- EnvironmentObject를 이용해서 공유 데이터 접근하기
+
 ### List and Detail
+
+
+
 
 
 

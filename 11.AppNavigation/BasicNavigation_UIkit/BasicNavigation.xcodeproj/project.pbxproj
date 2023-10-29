@@ -63,12 +63,12 @@
 				2C85B2062AEE36D100E1E12F /* AppDelegate.swift */,
 				2C85B2082AEE36D100E1E12F /* SceneDelegate.swift */,
 				2C85B20A2AEE36D100E1E12F /* ViewController.swift */,
-				2C85B20C2AEE36D100E1E12F /* Main.storyboard */,
 				2C10B18E2AEE5AB800477A88 /* DetailViewController.swift */,
+				2C10B1902AEE5F0300477A88 /* BlueViewController.swift */,
+				2C85B20C2AEE36D100E1E12F /* Main.storyboard */,
 				2C85B20F2AEE36D200E1E12F /* Assets.xcassets */,
 				2C85B2112AEE36D200E1E12F /* LaunchScreen.storyboard */,
 				2C85B2142AEE36D200E1E12F /* Info.plist */,
-				2C10B1902AEE5F0300477A88 /* BlueViewController.swift */,
 			);
 			path = BasicNavigation;
 			sourceTree = "<group>";

@@ -24,7 +24,8 @@ extension FuelType {
     }
 }
 
-struct Vehicle {
+struct Vehicle: Identifiable, Hashable {
+    var id = UUID()
     var name: String
     var image: String
     var brand: String
@@ -45,14 +46,13 @@ let data =  [
     Vehicle(name: "model X", image: "tesla-model-x", brand: "Tesla", fuelType: .electric, site: "https://www.tesla.com/ko_kr/modelx"),
 ]
 
-
-
 enum Brand {
     case porsche
     case tesla
 }
 
-struct Showroom {
+struct Showroom: Identifiable, Hashable {
+    let id = UUID()
     let name: String
     let brand: Brand
     let latitude: Double
@@ -85,4 +85,3 @@ let showrooms = [
     Showroom(name: "테슬라 전주", brand: .tesla, latitude: 35.806206, longitude: 127.090468),
     Showroom(name: "테슬라 제주", brand: .tesla, latitude: 33.496619, longitude: 126.493841),
 ]
-

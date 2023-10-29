@@ -2,8 +2,6 @@
 //  CarListViewController.swift
 //  CustomCellTableExample
 //
-//  Created by wannabewize on 10/28/23.
-//
 
 import UIKit
 
@@ -12,6 +10,8 @@ class CarListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Vehicles"
 
     }
 

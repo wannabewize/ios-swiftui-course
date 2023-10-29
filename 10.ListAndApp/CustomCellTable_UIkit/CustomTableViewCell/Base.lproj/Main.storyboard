@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Car List View Controller-->
+        <!--Vehicle List View Controller-->
         <scene sceneID="uiu-Ei-dmD">
             <objects>
-                <tableViewController id="1Da-DK-cfO" customClass="CarListViewController" customModule="CustomCellTableExample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="1Da-DK-cfO" customClass="VehicleListViewController" customModule="CustomCellTableExample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CLQ-0q-i3S">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

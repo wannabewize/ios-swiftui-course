@@ -2,8 +2,6 @@
 //  SceneDelegate.swift
 //  CustomCellTableExample
 //
-//  Created by wannabewize on 10/28/23.
-//
 
 import UIKit
 

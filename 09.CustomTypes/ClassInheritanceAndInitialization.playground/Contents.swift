@@ -1,5 +1,8 @@
 /**
  * 클래스 상속과 Initializer
+ * 부모 클래스의 Initializer를 상속하는 경우
+ * 1. 자식 클래스에 Initializer가 없는 경우(별도 초기화가 필요하지 않은 경우)
+ * 2. 자식 클래스에서 부모 클래스의 모든 Designated Initializer를 재정의하는 경우 -> Convenience Initializer 상속
  */
 
 class Parent {

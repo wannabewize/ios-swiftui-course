@@ -47,4 +47,8 @@
 - 클로저를 이용한 프로퍼티 초기화
 - 클로저와 lazy가 결합된 프로퍼티 초기화
 
+### Class Inheritance and Initialization
 
+- 클래스 상속과 초기화
+- 초기화 메소드 상속 상황
+- 초기화 메소드 Delegation

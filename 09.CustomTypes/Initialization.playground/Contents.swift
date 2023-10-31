@@ -60,15 +60,17 @@ struct MyStruct4 {
         self.value1 = value1
         self.value2 = value2
     }
-    
+       
     // convenience Initializer
-    init() {
-        self.init(value1: 0, value2: 0)
+    init(value1: Int) {
+        // Initializer Delegation
+        self.init(value1: value1, value2: 0)
     }
     
     // convenience Initializer
-    init(value1: Int) {
-        self.init(value1: value1, value2: 0)
+    init() {
+        // Initializer Delegation. Convenience -> Convenience
+        self.init(value1: 0)
     }
 }
 

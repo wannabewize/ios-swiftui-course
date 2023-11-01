@@ -57,4 +57,20 @@ class Child3: Parent {
 let child3_obj1 = Child3(value1: 1) // designated initializer로 인스턴스 생성
 let cihld3_obj2 = Child3() // 부모 클래스에서 상속받은 convenience initializer로 인스턴스 생성
 
+
+//
+// 초기화가 필요한 프로퍼티가 없고 convenience initialzer만 작성 -> Initializer 상속
+class Child4: Parent {
+    convenience init(_ value: Int) {
+        // Initializer 상속. convenience는 같은 클래스의 Initializer로만 위임 가능
+        self.init(value1: value)
+    }
+}
+
+let child4_obj1 = Child4()
+let child4_obj2 = Child4(value1: 0)
+let child4_obj3 = Child4(1)
+
 print("Done")
+
+

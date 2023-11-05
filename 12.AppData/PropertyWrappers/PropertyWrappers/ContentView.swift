@@ -5,18 +5,6 @@
 
 import SwiftUI
 
-// class만 가능
-class SharedModel: ObservableObject {
-    @Published var sharedValue = 0
-        
-    func asyncIncOne() {
-        // sharing same business login
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            self.sharedValue += 1
-        }
-    }
-}
-
 struct ContentView: View {
     @State var parentValue = 0
     @StateObject var provider = SharedModel()

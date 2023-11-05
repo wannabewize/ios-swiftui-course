@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C543E012AF81E8E009B0E3E /* SharedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C543E002AF81E8E009B0E3E /* SharedModel.swift */; };
 		2CCF1DF12AF4C59200101791 /* PropertyWrappersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF1DF02AF4C59200101791 /* PropertyWrappersApp.swift */; };
 		2CCF1DF32AF4C59200101791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF1DF22AF4C59200101791 /* ContentView.swift */; };
 		2CCF1DF52AF4C59300101791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF1DF42AF4C59300101791 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C543E002AF81E8E009B0E3E /* SharedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModel.swift; sourceTree = "<group>"; };
 		2CCF1DED2AF4C59200101791 /* PropertyWrappers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertyWrappers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCF1DF02AF4C59200101791 /* PropertyWrappersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappersApp.swift; sourceTree = "<group>"; };
 		2CCF1DF22AF4C59200101791 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				2CCF1E022AF4CA7900101791 /* BindingView.swift */,
 				2CCF1E042AF4D11C00101791 /* ObservedObjectView.swift */,
 				2CCF1E062AF4D9BF00101791 /* EnvironmentObjectView.swift */,
+				2C543E002AF81E8E009B0E3E /* SharedModel.swift */,
 			);
 			path = PropertyWrappers;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				2CCF1DF32AF4C59200101791 /* ContentView.swift in Sources */,
 				2CCF1E032AF4CA7900101791 /* BindingView.swift in Sources */,
 				2CCF1DF12AF4C59200101791 /* PropertyWrappersApp.swift in Sources */,
+				2C543E012AF81E8E009B0E3E /* SharedModel.swift in Sources */,
 				2CCF1E072AF4D9BF00101791 /* EnvironmentObjectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

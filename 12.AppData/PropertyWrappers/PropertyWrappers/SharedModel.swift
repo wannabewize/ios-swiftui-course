@@ -17,12 +17,3 @@ class SharedModel: ObservableObject {
         }
     }
 }
-
-class SharedModel2: ObservableObject {
-    @Published var sharedText: String
-    
-    init(sharedText: String) {
-        self.sharedText = sharedText
-    }
-    
-}

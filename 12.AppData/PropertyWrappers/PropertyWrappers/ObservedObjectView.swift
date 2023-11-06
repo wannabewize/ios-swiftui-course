@@ -10,9 +10,8 @@ struct ObservedObjectView: View {
     
     var body: some View {
         HStack {
-            Text("Observed Object - value")
+            Text("Observed Object value : \(provider.sharedValue)")
             Spacer()
-            Text("\(provider.sharedValue)")
             Button(action: {
                 provider.asyncIncOne()
             }, label: {

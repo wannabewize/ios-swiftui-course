@@ -10,9 +10,8 @@ struct EnvironmentObjectView: View {
     
     var body: some View {
         HStack {
-            Text("EnvironmentObject - value")
+            Text("EnvironmentObject value : \(provider.sharedValue)")
             Spacer()
-            Text("\(provider.sharedValue)")
             Button(action: {
                 provider.asyncIncOne()
             }, label: {

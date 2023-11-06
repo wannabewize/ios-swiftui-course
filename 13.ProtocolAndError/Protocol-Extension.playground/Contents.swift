@@ -1,11 +1,9 @@
 /*
  * 프로토콜 extension
+ * POP : Protocol Oriented Programming
  */
 
 protocol Movable {
-}
-
-struct Human : Movable {
 }
 
 // 프로토콜 확장 – 구현 작성 가능
@@ -13,6 +11,11 @@ extension Movable {
    func move() {
       print("Go! go! go!")
    }
+}
+
+
+// Movable 프로토콜을 채택한 구조체
+struct Human : Movable {
 }
 
 var man = Human()
@@ -28,6 +31,7 @@ extension Flyable {
    }
 }
 
+// 다중 프로토콜 채택
 struct Superman : Movable, Flyable {
    // 프로토콜 구현을 재정의
    func move() {

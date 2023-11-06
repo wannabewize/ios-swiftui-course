@@ -60,6 +60,22 @@ extension Dog : Running {
 
 doggy.run()
 
+
+class Cat {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+}
+
+extension Cat {
+    // Convenience Initialzer
+    convenience init() {
+        self.init(name: "kitty")
+    }
+}
+
 //
 // Enum extension
 //

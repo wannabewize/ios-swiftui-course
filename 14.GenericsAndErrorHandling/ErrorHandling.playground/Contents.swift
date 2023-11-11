@@ -25,7 +25,7 @@ catch let error {
 let str2 = try? String(contentsOf: url)
 print("str2 :", str2)
 
-//
+// try? - if-let binding
 if let str3 = try? String(contentsOf: url) {
     print("str3 :", str3)
 }

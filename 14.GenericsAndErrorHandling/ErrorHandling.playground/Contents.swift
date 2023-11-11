@@ -16,6 +16,7 @@ do {
     print("str from url:", str1)
 }
 catch let error {
+    // 에러 메시지 출력
     print(error.localizedDescription)
 }
 
@@ -33,6 +34,38 @@ else {
 }
 
 
-// Crash
+// Forced Unwrapping - Crash
 //let str3 = try! String(contentsOf: url)
               
+
+
+//
+// 함수 내에서 에러 발생 가능한 코드 사용하기
+func errorHandledFunction() {
+    do {
+        let str = try String(contentsOf: url)
+        print("str from url:", str)
+    }
+    catch let error {
+        print("ERROR - errorHandledFunction")
+    }
+}
+
+errorHandledFunction()
+
+func errorThrowingFunction() throws {
+    let str = try String(contentsOf: url)
+    print("str from url:", str)
+}
+
+do {
+    try errorThrowingFunction()
+}
+catch {
+    print("ERROR - errorThrowingFunction - Error :", error)
+}
+
+// 에러가 발생해도 비정상 종료되지 않고 계속 동작함.
+print("== DONE ==")
+
+

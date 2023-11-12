@@ -8,7 +8,7 @@ import Foundation
 
 let jsonStr = """
 {
-    "title": "Swift",
+    "name": "Swift",
     "version": 5.9,
     "url": "https://swift.org",
     "openSource": true
@@ -17,7 +17,7 @@ let jsonStr = """
 
 
 struct LanguageInfo: Codable {
-    let title: String
+    let name: String
     let version: Double
     let url: String
     let openSource: Bool
@@ -25,8 +25,9 @@ struct LanguageInfo: Codable {
 
 do {
     if let jsonData = jsonStr.data(using: .utf8) {
-        let decoded = try JSONDecoder().decode(LanguageInfo.self, from: jsonData)
-        print("decoded :", decoded)
+        let info = try JSONDecoder().decode(LanguageInfo.self, from: jsonData)
+        print("name :", info.name)
+        
     }
 }
 catch {
@@ -37,7 +38,7 @@ catch {
 // Codable -> JSON
 
 let python = LanguageInfo(
-    title: "Python",
+    name: "Python",
     version: 3.12,
     url: "https://python.org",
     openSource: true
@@ -57,9 +58,4 @@ do {
 catch {
     print("JSON Encode Error", error.localizedDescription)
 }
-
-
-//
-// 프로퍼티 이름과 JSON 프로퍼티 이름이 다른 경우
-
 

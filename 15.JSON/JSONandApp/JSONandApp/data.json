@@ -1,0 +1,84 @@
+{
+  "languages": [
+    {
+      "name": "Python",
+      "release_year": 1991,
+      "latest_version": "3.10.1",
+      "open_source": true,
+      "url": "https://www.python.org/",
+      "logo": "Python"
+    },
+    {
+      "name": "JavaScript",
+      "release_year": 1995,
+      "latest_version": "ECMAScript 2022",
+      "open_source": true,
+      "url": "https://www.javascript.com/",
+      "logo": "JavaScript"
+    },
+    {
+      "name": "Java",
+      "release_year": 1995,
+      "latest_version": "17",
+      "open_source": false,
+      "url": "https://www.java.com/",
+      "logo": "Java"
+    },
+    {
+      "name": "C++",
+      "release_year": 1985,
+      "latest_version": "ISO/IEC 14882:2020",
+      "open_source": true,
+      "url": "https://isocpp.org/",
+      "logo": "C++"
+    },
+    {
+      "name": "C#",
+      "release_year": 2000,
+      "latest_version": "10.0",
+      "open_source": true,
+      "url": "https://docs.microsoft.com/en-us/dotnet/csharp/",
+      "logo": "C-sharp"
+    },
+    {
+      "name": "Ruby",
+      "release_year": 1995,
+      "latest_version": "3.0.2",
+      "open_source": true,
+      "url": "https://www.ruby-lang.org/",
+      "logo": "Ruby"
+    },
+    {
+      "name": "Swift",
+      "release_year": 2014,
+      "latest_version": "5.9.1",
+      "open_source": true,
+      "url": "https://swift.org/",
+      "logo": "Swift"
+    },
+    {
+      "name": "Go",
+      "release_year": 2009,
+      "latest_version": "1.17.4",
+      "open_source": true,
+      "url": "https://golang.org/",
+      "logo": "Go"
+    },
+    {
+      "name": "Kotlin",
+      "release_year": 2011,
+      "latest_version": "1.5.21",
+      "open_source": true,
+      "url": "https://kotlinlang.org/",
+      "logo": "Kotlin"
+    },
+    {
+      "name": "TypeScript",
+      "release_year": 2012,
+      "latest_version": "4.4.3",
+      "open_source": true,
+      "url": "https://www.typescriptlang.org/",
+      "logo": "TypeScript"
+    }
+  ]
+}

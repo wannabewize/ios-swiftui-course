@@ -11,6 +11,7 @@
 		2CF0A9572B023E1700982E63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0A9562B023E1700982E63 /* ContentView.swift */; };
 		2CF0A9592B023E1900982E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0A9582B023E1900982E63 /* Assets.xcassets */; };
 		2CF0A95C2B023E1900982E63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0A95B2B023E1900982E63 /* Preview Assets.xcassets */; };
+		2CF0A9632B02892600982E63 /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0A9622B02892600982E63 /* ImageDownloadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2CF0A9562B023E1700982E63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CF0A9582B023E1900982E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF0A95B2B023E1900982E63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CF0A9622B02892600982E63 /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2CF0A9542B023E1700982E63 /* SyncAsyncAppApp.swift */,
 				2CF0A9562B023E1700982E63 /* ContentView.swift */,
+				2CF0A9622B02892600982E63 /* ImageDownloadService.swift */,
 				2CF0A9582B023E1900982E63 /* Assets.xcassets */,
 				2CF0A95A2B023E1900982E63 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF0A9572B023E1700982E63 /* ContentView.swift in Sources */,
+				2CF0A9632B02892600982E63 /* ImageDownloadService.swift in Sources */,
 				2CF0A9552B023E1700982E63 /* SyncAsyncAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

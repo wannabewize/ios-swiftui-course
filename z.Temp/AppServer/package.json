@@ -1,5 +1,15 @@
 {
+  "main": "server.mjs",
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/",
+      ".git/",
+      "public/",
+      "README"
+    ]
+  },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
   }
 }

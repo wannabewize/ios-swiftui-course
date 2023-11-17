@@ -1,7 +1,7 @@
 {
 	"movies": [
     {
-      "id": "movie-01",
+      "id": "movie01",
       "title": "어벤져스",
       "director": "조스 웨던",
       "synopsis": "히어로들의 모임, 어벤져스 결성",
@@ -14,7 +14,7 @@
       "release": "2012년 4월 11일"
     },    
     {
-      "id": "movie-02",
+      "id": "movie02",
       "title": "어벤져스: 엔드게임",
       "director": "안소니 루소, 조 루소",
       "synopsis": "어벤져스의 최후의 전투",
@@ -23,7 +23,7 @@
       "release": "2019년 4월 24일"
     },
     {
-      "id": "movie-03",
+      "id": "movie03",
       "title": "스파이더맨: 홈커밍",
       "director": "존 왓츠",
       "synopsis": "피터 파커의 스파이더맨의 첫 모험",
@@ -36,7 +36,7 @@
       "release": "2017년 7월 5일"
     },    
     {
-      "id": "movie-04",
+      "id": "movie04",
       "title": "블랙 팬서",
       "director": "라이언 쿠글러",
       "synopsis": "와칸다의 왕이자 영웅, 블랙 팬서의 이야기",
@@ -45,7 +45,7 @@
       "release": "2018년 2월 16일"
     },
     {
-      "id": "movie-05",
+      "id": "movie05",
       "title": "아이언맨",
       "director": "존 파브로",
       "synopsis": "토니 스타크가 아이언맨이 되는 이야기",

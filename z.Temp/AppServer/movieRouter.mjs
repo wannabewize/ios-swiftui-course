@@ -1,10 +1,15 @@
 import express from "express";
-import { sendMovies, sendMovieById } from "./movieController.mjs";
+import { handleMovieList, handleMovieDetail, handleMovieCreation } from "./movieController.mjs";
+import { handleCommentCreation, handleCommentList } from './movieController.mjs';
 
 const router = express.Router();
 
-router.get('/movies', sendMovies);
-router.get('/movies/:id', sendMovieById);
+router.get('/movies', handleMovieList);
+router.post('/movies', handleMovieCreation);
+router.get('/movies/:id', handleMovieDetail);
+
+router.get('/movies/:id/comments', handleCommentList);
+router.post('/movies/:id/comments', handleCommentCreation);
 
 export default router;
 

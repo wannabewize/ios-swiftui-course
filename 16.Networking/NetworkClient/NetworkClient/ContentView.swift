@@ -2,25 +2,14 @@
 //  ContentView.swift
 //  NetworkClient
 //
-//  Created by wannabewize on 11/18/23.
-//
 
 import SwiftUI
 
-// Identifiable : id Hashable 프로퍼티
-struct Movie: Codable, Identifiable {
-    let id: String
-    let title: String
-    let director: String
-    let poster: String?
-}
-
-struct ResponseWrapper: Codable {
-    let data: [Movie]
-}
-
+// 비동기 방식의 이미지 뷰 - 다운로드 완료 후 이미지 리사이징
 struct PosterImage: View {
     var urlStr: String?
+    var width, height: CGFloat
+    
     var body: some View {
         if let urlStr = urlStr, let url = URL(string: urlStr) {
             AsyncImage(url: url) { phase in
@@ -28,7 +17,7 @@ struct PosterImage: View {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(height: 80)
+                        .frame(width: width, height: height)
                 }
             }
         }
@@ -41,36 +30,55 @@ struct PosterImage: View {
 }
 
 struct ContentView: View {
+    @State var showError = false
     @State var movies: [Movie] = []
     
     var body: some View {
         VStack {
-            List {
-                ForEach(movies) { movie in
-                    HStack {
-                        PosterImage(urlStr: movie.poster)
-                        Text(movie.title)
+            NavigationStack {
+                List {
+                    ForEach(movies) { movie in
+                        NavigationLink {
+                            MovieDetailView(movieId: movie.id)
+                        } label: {
+                            HStack {
+                                PosterImage(urlStr: movie.poster, width: 80, height: 80)
+                                Text(movie.title)
+                                Text("\(movie.release)")
+                            }
+                        }
                     }
                 }
             }
+            .alert("Error", isPresented: $showError, actions: {
+                Button("OK") {
+                    showError = false
+                }
+            })
         }
         .padding()
         .onAppear {
-            Task {
-                let url = URL(string: "http://localhost:3000/api/movies")!
-                let ret = try await URLSession.shared.data(from: url)
-                
-                let data: Data = ret.0
-                let response: HTTPURLResponse = ret.1 as! HTTPURLResponse
-                
-                print("status code :", response.statusCode)
-                let contentType = response.value(forHTTPHeaderField: "content-type")
-                print("contentType :", contentType!)
-                
-                if let decoded = try? JSONDecoder().decode(ResponseWrapper.self, from: data) {
-                    movies = decoded.data
+            // 비동기 방식의 네트워크 - 1
+            fetchMovies { data, error in
+                guard error == nil, let movies = data else {
+                    showError = true
+                    return
                 }
+                self.movies = movies
             }
+            
+            // 비동기 방식의 네트워크 - 2
+//            Task {
+//                do {
+//                    if let movies = try await fetchMovieAsync() {
+//                        self.movies = movies
+//                    }
+//                }
+//                catch {
+//                    showError = true
+//                }
+//                
+//            }
         }
     }
 }

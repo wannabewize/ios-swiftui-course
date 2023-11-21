@@ -5,32 +5,9 @@
 
 import SwiftUI
 
-// 비동기 방식의 이미지 뷰 - 다운로드 완료 후 이미지 리사이징
-struct PosterImage: View {
-    var urlStr: String?
-    var width, height: CGFloat
-    
-    var body: some View {
-        if let urlStr = urlStr, let url = URL(string: urlStr) {
-            AsyncImage(url: url) { phase in
-                if let image = phase.image {
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: width, height: height)
-                }
-            }
-        }
-        else {
-            Image(systemName: "film")
-                .resizable()
-                .frame(height: 80)
-        }
-    }
-}
-
 struct ContentView: View {
     @State var showError = false
+    @State var errorMessage: String?
     @State var movies: [Movie] = []
     
     var body: some View {
@@ -42,15 +19,20 @@ struct ContentView: View {
                             MovieDetailView(movieId: movie.id)
                         } label: {
                             HStack {
-                                PosterImage(urlStr: movie.poster, width: 80, height: 80)
-                                Text(movie.title)
-                                Text("\(movie.release)")
+                                PosterImage(urlStr: movie.poster, width: 60, height: 60)
+                                VStack(alignment: .leading) {
+                                    Text(movie.title)
+                                        .font(.headline)
+                                    Text(String(format: "%d", movie.release))
+                                        .font(.subheadline)
+                                }
                             }
                         }
                     }
                 }
-            }
-            .alert("Error", isPresented: $showError, actions: {
+                .listStyle(.plain)
+            }            
+            .alert(errorMessage ?? "Error", isPresented: $showError, actions: {
                 Button("OK") {
                     showError = false
                 }
@@ -62,6 +44,7 @@ struct ContentView: View {
             fetchMovies { data, error in
                 guard error == nil, let movies = data else {
                     showError = true
+                    errorMessage = "영화 정보 조회 실패"
                     return
                 }
                 self.movies = movies
@@ -75,9 +58,10 @@ struct ContentView: View {
 //                    }
 //                }
 //                catch {
+//                    errorMessage = "영화 정보 조회 실패"
 //                    showError = true
 //                }
-//                
+//
 //            }
         }
     }

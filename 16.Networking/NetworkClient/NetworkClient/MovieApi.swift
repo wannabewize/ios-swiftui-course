@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum CustomError: Error {
+enum AppError: Error {
     case someError
 }
 
@@ -17,6 +17,11 @@ struct Movie: Codable, Identifiable {
     let poster: String?
 }
 
+struct Comment: Codable, Identifiable {
+    let id: String
+    let comment: String
+}
+
 struct MovieDetail: Codable {
     let id: String
     let title: String
@@ -25,6 +30,7 @@ struct MovieDetail: Codable {
     let poster: String?
     let synopsis: String?
     let actors: [String]
+    let comments: [Comment]
 }
     
 
@@ -48,7 +54,7 @@ func fetchMovies(completionHandler: @escaping ([Movie]?, Error?) -> Void) {
         
         // 성공 메시지
         guard (200..<300).contains(httpResponse.statusCode) else {
-            completionHandler(nil, CustomError.someError)
+            completionHandler(nil, AppError.someError)
             return
         }
         
@@ -82,7 +88,7 @@ func fetchMovieAsync() async throws -> [Movie]? {
         return movies
     }
     catch {
-        throw CustomError.someError
+        throw AppError.someError
     }
 }
 
@@ -101,7 +107,7 @@ func fetchMovieDetail(movieId: String, completionHandler: @escaping (MovieDetail
         
         // 성공 메시지
         guard (200..<300).contains(httpResponse.statusCode) else {
-            completionHandler(nil, CustomError.someError)
+            completionHandler(nil, AppError.someError)
             return
         }
         
@@ -125,7 +131,7 @@ func fetchMovieDetailAsync(movieId: String) async throws -> MovieDetail? {
     let data: Data = ret.0
     let response: HTTPURLResponse = ret.1 as! HTTPURLResponse
     guard (200..<300).contains(response.statusCode) else {
-        throw CustomError.someError
+        throw AppError.someError
     }
     
     do {
@@ -134,7 +140,7 @@ func fetchMovieDetailAsync(movieId: String) async throws -> MovieDetail? {
         return movie
     }
     catch {
-        throw CustomError.someError
+        throw AppError.someError
     }
 }
 

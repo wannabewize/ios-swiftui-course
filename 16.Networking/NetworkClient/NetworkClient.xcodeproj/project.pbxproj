@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C6708DA2B0BC80D004DED1C /* PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6708D92B0BC80D004DED1C /* PosterImage.swift */; };
 		2CF0A9712B0897C600982E63 /* NetworkClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0A9702B0897C600982E63 /* NetworkClientApp.swift */; };
 		2CF0A9732B0897C600982E63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0A9722B0897C600982E63 /* ContentView.swift */; };
 		2CF0A9752B0897C800982E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0A9742B0897C800982E63 /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C6708D92B0BC80D004DED1C /* PosterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImage.swift; sourceTree = "<group>"; };
+		2C6708FA2B0C391B004DED1C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2CF0A96D2B0897C600982E63 /* NetworkClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF0A9702B0897C600982E63 /* NetworkClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientApp.swift; sourceTree = "<group>"; };
 		2CF0A9722B0897C600982E63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		2CF0A9642B0897C600982E63 = {
 			isa = PBXGroup;
 			children = (
+				2C6708FA2B0C391B004DED1C /* README.md */,
 				2CF0A96F2B0897C600982E63 /* NetworkClient */,
 				2CF0A96E2B0897C600982E63 /* Products */,
 			);
@@ -61,6 +65,7 @@
 				2CF0A9762B0897C800982E63 /* Preview Content */,
 				2CF0A97E2B0A4DF100982E63 /* MovieApi.swift */,
 				2CF0A9802B0A89FC00982E63 /* MovieDetailView.swift */,
+				2C6708D92B0BC80D004DED1C /* PosterImage.swift */,
 			);
 			path = NetworkClient;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6708DA2B0BC80D004DED1C /* PosterImage.swift in Sources */,
 				2CF0A9732B0897C600982E63 /* ContentView.swift in Sources */,
 				2CF0A97F2B0A4DF100982E63 /* MovieApi.swift in Sources */,
 				2CF0A9712B0897C600982E63 /* NetworkClientApp.swift in Sources */,

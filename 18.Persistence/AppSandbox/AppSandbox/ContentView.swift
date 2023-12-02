@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var bundleText: String = "not loaded"
+    @State var bundlePListText: String = "now loaded"
     @State var documentText: String = "not loaded"
     @State var userInput: String = ""
     
@@ -20,6 +21,20 @@ struct ContentView: View {
         else {
             bundleText = "Error"
         }
+    }
+    
+    func loadBundlePList() {
+        if let url = Bundle.main.url(forResource: "Numbers", withExtension: "plist"), let data = try? Data(contentsOf: url) {
+            do {
+                let ret = try PropertyListDecoder().decode(Dictionary<String, String>.self, from: data)
+                print("ret", ret)
+                bundlePListText = ret.description
+            }
+            catch {
+                print("Error :", error)
+            }
+        }
+            
     }
     
     func saveValue() {
@@ -51,11 +66,19 @@ struct ContentView: View {
                 Text("Bundle Container")
                     .font(.title2)
                 
-                Button("번들 데이터 로드") {
+                Button("번들 JSON 로드") {
                     loadBundleData()
                 }
                 
                 Text(bundleText)
+                    .padding()
+                    .border(.gray, width: 0.5)
+                
+                Button("번들 PList 로드") {
+                    loadBundlePList()
+                }
+                
+                Text(bundlePListText)
                     .padding()
                     .border(.gray, width: 0.5)
             }

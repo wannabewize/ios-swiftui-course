@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State var bundleText: String = "not loaded"
-    @State var bundlePListText: String = "now loaded"
+    @State var customPListFile: String = "not loaded"
+    @State var customFieldInInfoPlist : String = "not loaded"
     @State var documentText: String = "not loaded"
     @State var userInput: String = ""
     
@@ -28,13 +29,19 @@ struct ContentView: View {
             do {
                 let ret = try PropertyListDecoder().decode(Dictionary<String, String>.self, from: data)
                 print("ret", ret)
-                bundlePListText = ret.description
+                customPListFile = ret.description
             }
             catch {
                 print("Error :", error)
             }
         }
             
+    }
+    
+    func loadValueInInfoPlist() {
+        if let customValue = Bundle.main.object(forInfoDictionaryKey: "CustomField") as? String {
+            customFieldInInfoPlist = customValue
+        }
     }
     
     func saveValue() {
@@ -58,11 +65,11 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack(spacing: 40) {
+        VStack(spacing: 20) {
             Text("App Sandbox")
                 .font(.title)
             
-            VStack(spacing: 20) {
+            VStack(spacing: 10) {
                 Text("Bundle Container")
                     .font(.title2)
                 
@@ -71,19 +78,30 @@ struct ContentView: View {
                 }
                 
                 Text(bundleText)
+                    .font(.caption)
                     .padding()
                     .border(.gray, width: 0.5)
                 
-                Button("번들 PList 로드") {
+                Button("Info.plist의 커스텀 필드 읽기") {
+                    loadValueInInfoPlist()
+                }
+                
+                Text(customFieldInInfoPlist)
+                    .font(.caption)
+                    .padding()
+                    .border(.gray, width: 0.5)
+                
+                Button("커스텀 plist 파일 로드") {
                     loadBundlePList()
                 }
                 
-                Text(bundlePListText)
+                Text(customPListFile)
+                    .font(.caption)
                     .padding()
                     .border(.gray, width: 0.5)
             }
             
-            VStack(spacing: 20) {
+            VStack(spacing: 10) {
                 Text("Data Container")
                     .font(.title2)
                 
@@ -102,6 +120,7 @@ struct ContentView: View {
                 }
                 
                 Text(documentText)
+                    .font(.caption)
                     .padding()
                     .border(.gray, width: 0.5)
             }

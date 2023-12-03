@@ -23,6 +23,7 @@
 		2CC31C1E2B1B894500A516B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CC31C252B1B8CAB00A516B6 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		2CC31C272B1BB3EC00A516B6 /* Numbers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Numbers.plist; sourceTree = "<group>"; };
+		2CC31C292B1C8F9200A516B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		2CC31C162B1B894400A516B6 /* AppSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				2CC31C292B1C8F9200A516B6 /* Info.plist */,
 				2CC31C172B1B894400A516B6 /* AppSandboxApp.swift */,
 				2CC31C192B1B894400A516B6 /* ContentView.swift */,
 				2CC31C1B2B1B894500A516B6 /* Assets.xcassets */,
@@ -282,6 +284,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AppSandbox/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppSandbox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -310,6 +313,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AppSandbox/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppSandbox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -2,13 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>one</key>
-	<string>하나</string>
-	<key>two</key>
-	<string>둘</string>
-	<key>three</key>
-	<string>셋</string>
-	<key>four</key>
-	<string>넷</string>
+	<key>CustomField</key>
+	<string>Custom Value</string>
 </dict>
 </plist>

@@ -18,7 +18,7 @@ struct ContentView: View {
             HStack(spacing: 20) {
                 Spacer()
                 Button("읽기") {
-                    let setting = UserDefaults()
+                    let setting = UserDefaults.standard
 
                     if let title = setting.string(forKey: "TITLE"),
                         let date = setting.value(forKey: "DATE") as? Date,
@@ -36,7 +36,7 @@ struct ContentView: View {
                 }
                 
                 Button("저장") {
-                    let setting = UserDefaults()
+                    let setting = UserDefaults.standard
                     setting.setValue(date, forKey: "DATE")
                     setting.setValue(notify, forKey: "NOTIFY")
                     setting.setValue(volume, forKey: "VOLUME")

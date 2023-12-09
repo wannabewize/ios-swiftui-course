@@ -38,6 +38,10 @@ struct ContentView: View {
                         detectFace()
                     }
                     
+                    Button("Animal") {
+                        detectAnimal()
+                    }
+                    
                     Spacer()
                 }
                 .frame(height: 60)
@@ -108,8 +112,6 @@ struct ContentView: View {
             resultStr = "ERROR!\n\(error.localizedDescription)"
             return
         }
-        
-
     }
     
     
@@ -144,7 +146,8 @@ struct ContentView: View {
             }.joined(separator: "\n")
         }
         catch {
-            print("Error")
+            print("Error", error)
+            resultStr = "ERROR!\n\(error.localizedDescription)"
         }
     }
     
@@ -164,9 +167,7 @@ struct ContentView: View {
                 return
             }
             
-            let filtered = observations.filter { item in
-                item.confidence > 0.6
-            }
+            let filtered = observations.filter { $0.confidence > 0.6 }
             
             bounds = filtered.map { item in
                 item.boundingBox
@@ -178,6 +179,35 @@ struct ContentView: View {
         }
         catch {
             print("Error", error)
+            resultStr = "ERROR!\n\(error.localizedDescription)"
+        }
+    }
+    
+    func detectAnimal() {
+        guard let cgImage = uiImage?.cgImage else {
+            return
+        }
+        
+        let request = VNRecognizeAnimalsRequest()
+        let handler = VNImageRequestHandler(cgImage: cgImage)
+        
+        do {
+            try handler.perform([request])
+            
+            guard let observations = request.results, observations.count > 0 else {
+                resultStr = "No Observations"
+                return
+            }
+            
+            let filtered = observations.filter { $0.confidence > 0.6 }
+            
+            bounds = filtered.map { $0.boundingBox }
+            
+            resultStr = filtered.map { return "[\($0.boundingBox) ( \($0.confidence) )" }.joined(separator: "\n")
+        }
+        catch {
+            print("Error", error)
+            resultStr = "ERROR!\n\(error.localizedDescription)"
         }
     }
 }

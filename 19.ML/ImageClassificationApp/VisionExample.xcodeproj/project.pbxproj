@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C96F38A2B2378B9006848E3 /* ImageClassificationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F3892B2378B9006848E3 /* ImageClassificationAppApp.swift */; };
+		2C96F38A2B2378B9006848E3 /* VisionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F3892B2378B9006848E3 /* VisionExample.swift */; };
 		2C96F38C2B2378B9006848E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96F38B2B2378B9006848E3 /* ContentView.swift */; };
 		2C96F38E2B2378BA006848E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C96F38D2B2378BA006848E3 /* Assets.xcassets */; };
 		2C96F3912B2378BA006848E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C96F3902B2378BA006848E3 /* Preview Assets.xcassets */; };
@@ -15,8 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C96F3862B2378B9006848E3 /* ImageClassificationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageClassificationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C96F3892B2378B9006848E3 /* ImageClassificationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationAppApp.swift; sourceTree = "<group>"; };
+		2C96F3862B2378B9006848E3 /* VisionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C96F3892B2378B9006848E3 /* VisionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionExample.swift; sourceTree = "<group>"; };
 		2C96F38B2B2378B9006848E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C96F38D2B2378BA006848E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C96F3902B2378BA006848E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 		2C96F37D2B2378B8006848E3 = {
 			isa = PBXGroup;
 			children = (
-				2C96F3882B2378B9006848E3 /* ImageClassificationApp */,
+				2C96F3882B2378B9006848E3 /* VisionExample */,
 				2C96F3872B2378B9006848E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,21 +45,21 @@
 		2C96F3872B2378B9006848E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C96F3862B2378B9006848E3 /* ImageClassificationApp.app */,
+				2C96F3862B2378B9006848E3 /* VisionExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C96F3882B2378B9006848E3 /* ImageClassificationApp */ = {
+		2C96F3882B2378B9006848E3 /* VisionExample */ = {
 			isa = PBXGroup;
 			children = (
-				2C96F3892B2378B9006848E3 /* ImageClassificationAppApp.swift */,
+				2C96F3892B2378B9006848E3 /* VisionExample.swift */,
 				2C96F38B2B2378B9006848E3 /* ContentView.swift */,
 				2CBCEA242B2402B500D57339 /* BoxOverlay.swift */,
 				2C96F38D2B2378BA006848E3 /* Assets.xcassets */,
 				2C96F38F2B2378BA006848E3 /* Preview Content */,
 			);
-			path = ImageClassificationApp;
+			path = VisionExample;
 			sourceTree = "<group>";
 		};
 		2C96F38F2B2378BA006848E3 /* Preview Content */ = {
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C96F3852B2378B9006848E3 /* ImageClassificationApp */ = {
+		2C96F3852B2378B9006848E3 /* VisionExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C96F3942B2378BA006848E3 /* Build configuration list for PBXNativeTarget "ImageClassificationApp" */;
+			buildConfigurationList = 2C96F3942B2378BA006848E3 /* Build configuration list for PBXNativeTarget "VisionExample" */;
 			buildPhases = (
 				2C96F3822B2378B9006848E3 /* Sources */,
 				2C96F3832B2378B9006848E3 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = ImageClassificationApp;
+			name = VisionExample;
 			productName = ImageClassificationApp;
-			productReference = 2C96F3862B2378B9006848E3 /* ImageClassificationApp.app */;
+			productReference = 2C96F3862B2378B9006848E3 /* VisionExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C96F3812B2378B8006848E3 /* Build configuration list for PBXProject "ImageClassificationApp" */;
+			buildConfigurationList = 2C96F3812B2378B8006848E3 /* Build configuration list for PBXProject "VisionExample" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C96F3852B2378B9006848E3 /* ImageClassificationApp */,
+				2C96F3852B2378B9006848E3 /* VisionExample */,
 			);
 		};
 /* End PBXProject section */
@@ -142,7 +142,7 @@
 			files = (
 				2C96F38C2B2378B9006848E3 /* ContentView.swift in Sources */,
 				2CBCEA252B2402B500D57339 /* BoxOverlay.swift in Sources */,
-				2C96F38A2B2378B9006848E3 /* ImageClassificationAppApp.swift in Sources */,
+				2C96F38A2B2378B9006848E3 /* VisionExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +275,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ImageClassificationApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VisionExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -289,7 +289,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.example.ImageClassificationApp;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.example.VisionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -304,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ImageClassificationApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VisionExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -318,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.example.ImageClassificationApp;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.example.VisionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C96F3812B2378B8006848E3 /* Build configuration list for PBXProject "ImageClassificationApp" */ = {
+		2C96F3812B2378B8006848E3 /* Build configuration list for PBXProject "VisionExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C96F3922B2378BA006848E3 /* Debug */,
@@ -338,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C96F3942B2378BA006848E3 /* Build configuration list for PBXNativeTarget "ImageClassificationApp" */ = {
+		2C96F3942B2378BA006848E3 /* Build configuration list for PBXNativeTarget "VisionExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C96F3952B2378BA006848E3 /* Debug */,

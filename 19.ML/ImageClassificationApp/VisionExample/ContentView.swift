@@ -6,12 +6,13 @@
 import SwiftUI
 import PhotosUI
 import Vision
+import VisionKit
 
 struct ContentView: View {
     @State var selectedItem: PhotosPickerItem?
     @State var uiImage: UIImage?
     @State var resultStr: String?
-    @State var bounds: [CGRect]?
+    @State var bounds: [CGRect] = []
     @State var imageSize: CGSize?
     
     var body: some View {
@@ -20,6 +21,9 @@ struct ContentView: View {
                 HStack(spacing: 12) {
                     PhotosPicker(selection: $selectedItem, matching: .images) {
                         Image(systemName: "photo")
+                    }.onChange(of: selectedItem) { oldValue, newValue in
+                        bounds = []
+                        resultStr = nil
                     }
                     
                     Button("Classify") {
@@ -28,6 +32,10 @@ struct ContentView: View {
                     
                     Button("Rectange") {
                         detectRectangle()
+                    }
+                    
+                    Button("Face Detect") {
+                        detectFace()
                     }
                     
                     Spacer()
@@ -42,9 +50,7 @@ struct ContentView: View {
                         Image(uiImage: image)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                        if let bounds = bounds {
-                            BoxOverlay(bounds: bounds, imageSize: image.size)
-                        }
+                        BoxOverlay(bounds: bounds, imageSize: image.size)
                     }
                 }
                 
@@ -68,16 +74,6 @@ struct ContentView: View {
                 uiImage = UIImage(data: loaded)
             }
         })
-        .onAppear {
-            let visionRect = CGRect(x: 0.3, y: 0.4, width: 0.5, height: 0.4)
-            let rio = CGRect(x: 0, y: 0, width: 600.0/3000.0, height: 400.0/4000.0)
-            
-            let ret1 = VNImageRectForNormalizedRect(visionRect, 3000, 4000)
-            let ret2 = VNImageRectForNormalizedRectUsingRegionOfInterest(visionRect, 3000, 4000, rio)
-            
-            print(visionRect, "->", ret1, ret2)
-        }
-        
     }
     
     func classifyImage() {
@@ -88,15 +84,12 @@ struct ContentView: View {
         let handler = VNImageRequestHandler(cgImage: cgImage)
         do {
             try handler.perform([request])
-        }
-        catch {
-            // 시뮬레이터 동작 안함
-            print("Error ", error)
-            resultStr = "ERROR!\n\(error.localizedDescription)"
-            return
-        }
-        
-        if let observations: [VNClassificationObservation] = request.results {
+            
+            guard let observations: [VNClassificationObservation] = request.results, observations.count > 0 else {
+                resultStr = "No observation"
+                return
+            }
+            
             let mapped = observations
                 .filter { item in
                     item.confidence > 0.5
@@ -107,9 +100,16 @@ struct ContentView: View {
                 .map { item in
                     "\(item.identifier)(\(item.confidence))"
                 }
-            print("mapped :", mapped)
-            resultStr = mapped.joined(separator: "\n")
+                resultStr = mapped.joined(separator: "\n")
         }
+        catch {
+            // 시뮬레이터 동작 안함
+            print("Error ", error)
+            resultStr = "ERROR!\n\(error.localizedDescription)"
+            return
+        }
+        
+
     }
     
     
@@ -118,37 +118,66 @@ struct ContentView: View {
             return
         }
         
-        let request = VNDetectRectanglesRequest { request, error in
-            print("rectangle completed")
-        }
-        request.minimumConfidence = 0.5
+        let request = VNDetectRectanglesRequest()
+        request.minimumConfidence = 0.6
         request.maximumObservations = 10
         
         let handler = VNImageRequestHandler(cgImage: cgImage)
         do {
             try handler.perform([request])
             
-            // [VNRectangleObservation]
-            if let observations = request.results, observations.count > 0 {
-                bounds = observations.map({ item in
-                    item.boundingBox
-                })
-                
-                let result = observations.map { item in
-//                    let convertedRect = VNImageRectForNormalizedRect(item.boundingBox, uiImage?.size.width, uiImage?.size.height)
-                    let normalizedRect = VNImageRectForNormalizedRect(item.boundingBox, Int(uiImage!.size.width), Int(uiImage!.size.height))
-                    print(item.boundingBox, normalizedRect)
-                    return "[\(item.topLeft) - \(item.bottomRight)] \(item.confidence)"
-                }
-                resultStr = result.joined(separator: "\n")
+            guard let observations = request.results, observations.count > 0 else {
+                resultStr = "No observation"
+                return
             }
-            else {
-                bounds = nil
-                resultStr = "zero retangle found"
+            
+            let filtered = observations.filter { item in
+                item.confidence > 0.6
             }
+            
+            bounds = filtered.map { item in
+                item.boundingBox
+            }
+            
+            resultStr = filtered.map { item in
+                return "[\(item.boundingBox) ( \(item.confidence) )"
+            }.joined(separator: "\n")
         }
         catch {
             print("Error")
+        }
+    }
+    
+    func detectFace() {
+        guard let cgImage = uiImage?.cgImage else {
+            return
+        }
+        
+        let request = VNDetectFaceRectanglesRequest()
+        let handler = VNImageRequestHandler(cgImage: cgImage)
+        
+        do {
+            try handler.perform([request])
+            
+            guard let observations = request.results, observations.count > 0 else {
+                resultStr = "No observation"
+                return
+            }
+            
+            let filtered = observations.filter { item in
+                item.confidence > 0.6
+            }
+            
+            bounds = filtered.map { item in
+                item.boundingBox
+            }
+            
+            resultStr = filtered.map { item in
+                return "[\(item.boundingBox) ( \(item.confidence) )"
+            }.joined(separator: "\n")
+        }
+        catch {
+            print("Error", error)
         }
     }
 }

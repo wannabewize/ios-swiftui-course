@@ -1,12 +1,12 @@
 //
-//  ImageClassificationAppApp.swift
-//  ImageClassificationApp
+//  VisionAndImageExample.swift
+//  VisionAndImageExample
 //
 
 import SwiftUI
 
 @main
-struct VisionExample: App {
+struct VisionAndImageExample: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

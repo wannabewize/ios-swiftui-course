@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  ImageClassificationApp
+//  VisionAndImageExample
 //
 
 import SwiftUI
@@ -171,6 +171,7 @@ struct ContentView: View {
             
             bounds = filtered.map { item in
                 item.boundingBox
+                
             }
             
             resultStr = filtered.map { item in
@@ -203,7 +204,37 @@ struct ContentView: View {
             
             bounds = filtered.map { $0.boundingBox }
             
-            resultStr = filtered.map { return "[\($0.boundingBox) ( \($0.confidence) )" }.joined(separator: "\n")
+            resultStr = filtered.map { "[\($0.boundingBox) ( \($0.confidence) )" }.joined(separator: "\n")
+        }
+        catch {
+            print("Error", error)
+            resultStr = "ERROR!\n\(error.localizedDescription)"
+        }
+    }
+    
+    func detectText() {
+        guard let cgImage = uiImage?.cgImage else { return }
+        
+        let request = VNRecognizeTextRequest()
+        let handler = VNImageRequestHandler(cgImage: cgImage)
+        
+        do {
+            try handler.perform([request])
+            
+            guard let observations: [VNRecognizedTextObservation] = request.results, observations.count > 0 else {
+                resultStr = "No Observations"
+                return
+            }
+            
+            let filtered = observations.filter { $0.confidence > 0.6 }
+            
+            bounds = filtered.map { $0.boundingBox }
+            
+            resultStr = filtered.map { item in
+                let top: VNRecognizedText = item.topCandidates(1).first!
+                return top.string
+            }.joined(separator: "\n")
+            
         }
         catch {
             print("Error", error)

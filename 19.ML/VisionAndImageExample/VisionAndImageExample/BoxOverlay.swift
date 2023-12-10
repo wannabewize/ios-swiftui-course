@@ -1,6 +1,6 @@
 //
 //  BoxOverlay.swift
-//  ImageClassificationApp
+//  VisionAndImageExample
 //
 
 import SwiftUI

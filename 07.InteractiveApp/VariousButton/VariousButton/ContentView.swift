@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var message: String = ""
+    
     var body: some View {
         VStack(spacing: 24) {
             Button("Simple Button") {
-                print("Simple Button Clicked")
+                message = "Simple Button Clicked"
             }
             
             Button(action: {
-                print("Custom Label Button Clicked")
+                message = "Custom Label Button Clicked"
             }, label: {
                 Image(systemName: "car")
                 Text("Custom")
@@ -25,48 +27,62 @@ struct ContentView: View {
                     .font(.caption)
             })
             
-            Button("Button Title", image: ImageResource(name: "tycan", bundle: Bundle.main)) {
-                print("Button Clicked")
+            Button("Image Resource Button Title", image: ImageResource(name: "tycan", bundle: Bundle.main)) {
+                message = "Button Clicked"
             }
             
             Button("Destructive Button", role: .destructive) {
-                print("Destructive Button Clicked")
+                message = "Destructive Button Clicked"
             }
             
             Button("Button with systemImage", systemImage: "pencil") {
-                print("Button with system Image clicked")
+                message = "Button with system Image clicked"
             }
             
             Button("Bordered Button") {
-                print("Bordered Button clicked")
+                message = "Bordered Style Button clicked"
             }
             .buttonStyle(.bordered)
-
+            
             Button("Borderless Button") {
-                print("Borderless Button clicked")
+                message = "Borderless Style Button clicked"
             }
             .buttonStyle(.borderless)
             
             Button("BorderedProminent Button") {
-                print("BorderedProminent Button clicked")
+                message = "BorderedProminent Style Button clicked"
             }
             .buttonStyle(.borderedProminent)
             
             Button(action: {
-                print("aa")
+                message = "Round button"
             }, label: {
-                HStack {
-                    Image(systemName: "car")
-                    Text("Button")
-                }
-                .padding(10)
+                Text("Rounded Border Button")
             })
-            .background(.yellow)
-            .clipShape(
-                RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))
-                    
-                    
+            .padding(.vertical, 10)
+            .padding(.horizontal, 20)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.red, lineWidth: 2.0)
             )
+            .background(.yellow)
+            .cornerRadius(10)
+            .tint(.white)
+            
+            Text("Text with Gesture")
+                .padding(.vertical, 10)
+                .padding(.horizontal, 20)
+                .foregroundColor(.white)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.black, lineWidth: 1.0)
+                        .fill(Color.gray)
+                )
+                .onTapGesture {
+                    message = "Text with Gesture Clicked"
+                }
+
+            Text(message)
         }
     }
 }

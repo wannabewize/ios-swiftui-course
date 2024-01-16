@@ -35,29 +35,44 @@ struct ContentView: View {
                 message = "Destructive Button Clicked"
             }
             
-            Button("Button with systemImage", systemImage: "pencil") {
+            Button("System Image Button", systemImage: "pencil") {
                 message = "Button with system Image clicked"
             }
             
-            Button("Bordered Button") {
-                message = "Bordered Style Button clicked"
+            Button("ButtonStyle - bordered") {
+                message = "Bordered Style clicked"
             }
             .buttonStyle(.bordered)
             
-            Button("Borderless Button") {
-                message = "Borderless Style Button clicked"
+            Button("ButtonStyle - borderless") {
+                message = "Borderless Button clicked"
             }
             .buttonStyle(.borderless)
             
-            Button("BorderedProminent Button") {
-                message = "BorderedProminent Style Button clicked"
+            Button("ButtonStyle - borderedProminent") {
+                message = "BorderedProminent Button clicked"
             }
             .buttonStyle(.borderedProminent)
             
             Button(action: {
-                message = "Round button"
+                message = "Rounded background Button"
             }, label: {
-                Text("Rounded Border Button")
+                Text("Rounded background Button clicked")
+
+            })
+            .padding(.vertical, 10)
+            .padding(.horizontal, 20)
+            .foregroundColor(.white)
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.black, lineWidth: 1.0)
+                    .fill(Color.gray)
+            )
+            
+            Button(action: {
+                message = "Overlay Button clicked"
+            }, label: {
+                Text("Overlay Button")
             })
             .padding(.vertical, 10)
             .padding(.horizontal, 20)
@@ -69,18 +84,7 @@ struct ContentView: View {
             .cornerRadius(10)
             .tint(.white)
             
-            Text("Text with Gesture")
-                .padding(.vertical, 10)
-                .padding(.horizontal, 20)
-                .foregroundColor(.white)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.black, lineWidth: 1.0)
-                        .fill(Color.gray)
-                )
-                .onTapGesture {
-                    message = "Text with Gesture Clicked"
-                }
+            Divider()
 
             Text(message)
         }

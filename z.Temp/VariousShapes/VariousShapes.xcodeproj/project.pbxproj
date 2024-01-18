@@ -11,6 +11,7 @@
 		2C0E48122B56A1B7009FD470 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0E48112B56A1B7009FD470 /* ContentView.swift */; };
 		2C0E48142B56A1B8009FD470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0E48132B56A1B8009FD470 /* Assets.xcassets */; };
 		2C0E48172B56A1B8009FD470 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0E48162B56A1B8009FD470 /* Preview Assets.xcassets */; };
+		2C72FCAC2B5925A4006DB75E /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C72FCAB2B5925A4006DB75E /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		2C0E48112B56A1B7009FD470 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C0E48132B56A1B8009FD470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C0E48162B56A1B8009FD470 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C72FCAB2B5925A4006DB75E /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		2CB3B1922B5925E6001F50F0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,8 @@
 		2C0E48032B56A1B7009FD470 = {
 			isa = PBXGroup;
 			children = (
+				2CB3B1922B5925E6001F50F0 /* README.md */,
+				2C72FCAB2B5925A4006DB75E /* screenshot.png */,
 				2C0E480E2B56A1B7009FD470 /* VariousShapes */,
 				2C0E480D2B56A1B7009FD470 /* Products */,
 			);
@@ -125,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C72FCAC2B5925A4006DB75E /* screenshot.png in Resources */,
 				2C0E48172B56A1B8009FD470 /* Preview Assets.xcassets in Resources */,
 				2C0E48142B56A1B8009FD470 /* Assets.xcassets in Resources */,
 			);

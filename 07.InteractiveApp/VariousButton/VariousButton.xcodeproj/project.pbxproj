@@ -11,6 +11,7 @@
 		2CA496FA2B5565EE00300C8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA496F92B5565EE00300C8F /* ContentView.swift */; };
 		2CA496FC2B5565EF00300C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA496FB2B5565EF00300C8F /* Assets.xcassets */; };
 		2CA496FF2B5565EF00300C8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA496FE2B5565EF00300C8F /* Preview Assets.xcassets */; };
+		2CB3B1942B5926B2001F50F0 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB3B1932B5926B2001F50F0 /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		2CA496F92B5565EE00300C8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CA496FB2B5565EF00300C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CA496FE2B5565EF00300C8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CB3B1932B5926B2001F50F0 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		2CB3B1952B5926C6001F50F0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,8 @@
 		2CA496EB2B5565EE00300C8F = {
 			isa = PBXGroup;
 			children = (
+				2CB3B1952B5926C6001F50F0 /* README.md */,
+				2CB3B1932B5926B2001F50F0 /* screenshot.png */,
 				2CA496F62B5565EE00300C8F /* VariousButton */,
 				2CA496F52B5565EE00300C8F /* Products */,
 			);
@@ -127,6 +132,7 @@
 			files = (
 				2CA496FF2B5565EF00300C8F /* Preview Assets.xcassets in Resources */,
 				2CA496FC2B5565EF00300C8F /* Assets.xcassets in Resources */,
+				2CB3B1942B5926B2001F50F0 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

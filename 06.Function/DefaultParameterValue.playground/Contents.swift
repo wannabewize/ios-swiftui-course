@@ -17,7 +17,7 @@ func exercise(what : String, who : String = "Alone", emotion : String = "Joy") {
 
 exercise(what: "Jog")
 exercise(what: "Tennis", who: "Coach")
-exercise(what: "Dance", who: "Partnet", emotion: "fun")
+exercise(what: "Dance", who: "Partner", emotion: "fun")
 
 
 // Default Paramter w/o name

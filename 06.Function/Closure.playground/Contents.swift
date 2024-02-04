@@ -49,6 +49,7 @@ let ret2 = doAddTask {
 } second: {
     4
 }
+
 print("ret2 :", ret2)
 
 // 파라미터가 있는 함수 타입

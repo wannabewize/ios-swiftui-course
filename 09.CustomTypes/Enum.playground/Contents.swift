@@ -27,6 +27,7 @@ enum Season: String, CaseIterable {
     case winter = "겨울"
 }
 
+
 // CaseIterable와 allCases
 let seasons: [Season] = Season.allCases
 for item in Season.allCases {
@@ -60,6 +61,9 @@ enum Device: String {
 
 let iPhone = Device.phone
 print("iPhone은 \(iPhone.rawValue)")
+
+let notExistPet: Pet? = Pet(rawValue: 3)
+let notExistDevice: Device? = Device(rawValue: "스마트워치")
 
 //
 // Associated Value

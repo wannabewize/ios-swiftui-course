@@ -27,6 +27,8 @@ enum Season: String, CaseIterable {
     case winter = "겨울"
 }
 
+let march = Season.spring
+let december: Season = .winter
 
 // CaseIterable와 allCases
 let seasons: [Season] = Season.allCases

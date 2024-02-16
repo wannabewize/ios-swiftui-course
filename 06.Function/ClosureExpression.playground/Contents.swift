@@ -2,6 +2,33 @@
  * Closure Expression
  */
 
+func greetingFn1(who: String) -> String {
+    return "hello \(who)"
+}
+greetingFn1(who: "Swift")
+
+let greetingFn2 = { (who: String) -> String in
+    return "hello \(who)"
+}
+greetingFn2("Closure")
+
+// 파라미터, 반환 타입이 없는 함수, 클로저 표현식
+func simpleFn1() {
+    print("simple function-1 works")
+}
+let simpleFn2 = {
+    print("simple function-2 works")
+}
+
+// 리턴 타입 생략
+let omitReturnFn = { (arg: String) in
+    // 1개의 return 문장 -> return 생략
+    arg.count
+}
+omitReturnFn("Hello")
+
+
+
 let originArray = [1, 3, 4, 2, 5]
 
 let sorted1 = originArray.sorted()

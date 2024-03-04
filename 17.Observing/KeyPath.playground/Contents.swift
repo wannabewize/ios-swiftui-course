@@ -54,3 +54,15 @@ let innerStruct = complexObj[keyPath: path2]
 print("innerValue :", innerValue, innerStruct.value)
 
 
+//
+// KeyPath for Class
+class MyClass {
+    var name = "name of class"  
+    var value = 999
+}
+
+let classInstance = MyClass()
+let classProperty1 = classInstance[keyPath: \MyClass.name]
+let classProperty2 = classInstance[keyPath: \MyClass.value]
+
+print("Class : property1 :", classProperty1, "property2 :", classProperty2)

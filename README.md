@@ -73,6 +73,9 @@
 
 - 네트워크
 
-## 17. Persistence
+## 17. Observing
+
+
+## 18. Persistence
 
 - 영속성

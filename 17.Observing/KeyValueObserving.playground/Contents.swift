@@ -58,7 +58,7 @@ obj.increse()
 
 
 //
-// Swift의 구조체/클래스의 프로퍼티 변경 감시
+// Swift의 구조체/클래스의 프로퍼티 변경 감시 - 객체 내부에서 탐지
 struct PropertyObserver {
     var value: Int = 0 {
         willSet {

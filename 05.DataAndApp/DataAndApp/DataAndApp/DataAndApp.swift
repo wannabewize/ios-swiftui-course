@@ -1,12 +1,11 @@
 //
-//  DataFlowApp.swift
-//  DataFlow
+//  DataAndApp.swift
 //
 
 import SwiftUI
 
 @main
-struct DataFlowApp: App {
+struct DataAndApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

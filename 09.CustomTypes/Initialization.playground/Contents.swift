@@ -126,7 +126,7 @@ struct Vehicle {
 let boxster = Vehicle(name: "718 Boxster", brand: "Porsche",
                       fuelType: .petrol,
                       size: Size(height: 1275, width: 1800, length: 4390))
-print("vehicle", boxster)
+print("Vehicle - Size, FuelType", boxster)
 
 
 class Person {
@@ -141,5 +141,8 @@ class Person {
    }
 }
 
-let person: Person? = Person(value: 999)
+let person1: Person? = Person(value: -1)
+if person1 == nil {
+    print("초기화 실패, nil 반환")
+}
 

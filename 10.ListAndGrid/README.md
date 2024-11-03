@@ -1,8 +1,8 @@
 # 목록형 씬
 
-## Basic List Example
+## Static List Example
 
-SwiftUI의 List를 이용한 목록형 뷰 작성 예제
+SwiftUI의 List를 이용한 정적 목록(Static List) 작성 예제
 
 ## List and Custom Type
 

@@ -22,19 +22,19 @@ struct ContentView: View {
             }
             Divider()
             
-            Text("List and Collection/Range").font(.subheadline)
-            List(0..<5) { item in
-                Text("Item - \(item)")
-            }
-
-            Divider()
-
             Text("List and ForEach").font(.subheadline)
             List {
                 ForEach(0..<5) { item in
                     Text("Item - \(item)")
                 }
             }
+            
+            Text("List and Collection/Range").font(.subheadline)
+            List(0..<5) { item in
+                Text("Item - \(item)")
+            }
+
+            Divider()
         }
         .padding()
     }

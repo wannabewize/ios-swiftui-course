@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		2C984C502CD14DEE00632B5D /* BasicListExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicListExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C984C502CD14DEE00632B5D /* StaticListExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticListExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2C984C522CD14DEE00632B5D /* BasicListExamples */ = {
+		2C984C522CD14DEE00632B5D /* StaticListExamples */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BasicListExamples;
+			path = StaticListExamples;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		2C984C472CD14DEE00632B5D = {
 			isa = PBXGroup;
 			children = (
-				2C984C522CD14DEE00632B5D /* BasicListExamples */,
+				2C984C522CD14DEE00632B5D /* StaticListExamples */,
 				2C984C512CD14DEE00632B5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		2C984C512CD14DEE00632B5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C984C502CD14DEE00632B5D /* BasicListExamples.app */,
+				2C984C502CD14DEE00632B5D /* StaticListExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C984C4F2CD14DEE00632B5D /* BasicListExamples */ = {
+		2C984C4F2CD14DEE00632B5D /* StaticListExamples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C984C5E2CD14DEF00632B5D /* Build configuration list for PBXNativeTarget "BasicListExamples" */;
+			buildConfigurationList = 2C984C5E2CD14DEF00632B5D /* Build configuration list for PBXNativeTarget "StaticListExamples" */;
 			buildPhases = (
 				2C984C4C2CD14DEE00632B5D /* Sources */,
 				2C984C4D2CD14DEE00632B5D /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2C984C522CD14DEE00632B5D /* BasicListExamples */,
+				2C984C522CD14DEE00632B5D /* StaticListExamples */,
 			);
-			name = BasicListExamples;
+			name = StaticListExamples;
 			packageProductDependencies = (
 			);
 			productName = BasicListExamples;
-			productReference = 2C984C502CD14DEE00632B5D /* BasicListExamples.app */;
+			productReference = 2C984C502CD14DEE00632B5D /* StaticListExamples.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C984C4B2CD14DEE00632B5D /* Build configuration list for PBXProject "BasicListExamples" */;
+			buildConfigurationList = 2C984C4B2CD14DEE00632B5D /* Build configuration list for PBXProject "StaticListExamples" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C984C4F2CD14DEE00632B5D /* BasicListExamples */,
+				2C984C4F2CD14DEE00632B5D /* StaticListExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +251,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BasicListExamples/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"StaticListExamples/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -279,7 +279,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BasicListExamples/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"StaticListExamples/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -303,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C984C4B2CD14DEE00632B5D /* Build configuration list for PBXProject "BasicListExamples" */ = {
+		2C984C4B2CD14DEE00632B5D /* Build configuration list for PBXProject "StaticListExamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C984C5C2CD14DEF00632B5D /* Debug */,
@@ -312,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C984C5E2CD14DEF00632B5D /* Build configuration list for PBXNativeTarget "BasicListExamples" */ = {
+		2C984C5E2CD14DEF00632B5D /* Build configuration list for PBXNativeTarget "StaticListExamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C984C5F2CD14DEF00632B5D /* Debug */,

@@ -46,6 +46,12 @@ struct ContentView: View {
                     Text("Add")
                 }
                 
+                if listEditMode == .active {
+                    Button("취소") {
+                        listEditMode = .inactive
+                    }
+                }
+                
                 // https://developer.apple.com/documentation/swiftui/editbutton
                 EditButton()
             }

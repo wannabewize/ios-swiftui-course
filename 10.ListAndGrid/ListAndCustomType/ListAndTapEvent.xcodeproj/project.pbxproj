@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C984C622CD1513300632B5D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C984C612CD1513300632B5D /* Movie.swift */; };
-		2C984C642CD151E500632B5D /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C984C632CD151E500632B5D /* MovieCell.swift */; };
+		2C984C642CD151E500632B5D /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C984C632CD151E500632B5D /* MovieItemView.swift */; };
 		2CCED0B62AD8549E008F2BD3 /* ListExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCED0B52AD8549E008F2BD3 /* ListExampleApp.swift */; };
 		2CCED0B82AD8549E008F2BD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCED0B72AD8549E008F2BD3 /* ContentView.swift */; };
 		2CCED0BA2AD8549F008F2BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCED0B92AD8549F008F2BD3 /* Assets.xcassets */; };
@@ -17,8 +17,8 @@
 
 /* Begin PBXFileReference section */
 		2C984C612CD1513300632B5D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		2C984C632CD151E500632B5D /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		2CCED0B22AD8549E008F2BD3 /* ListAndCustomType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListAndCustomType.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C984C632CD151E500632B5D /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
+		2CCED0B22AD8549E008F2BD3 /* ListAndTapEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListAndTapEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCED0B52AD8549E008F2BD3 /* ListExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExampleApp.swift; sourceTree = "<group>"; };
 		2CCED0B72AD8549E008F2BD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CCED0B92AD8549F008F2BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		2CCED0A92AD8549E008F2BD3 = {
 			isa = PBXGroup;
 			children = (
-				2CCED0B42AD8549E008F2BD3 /* ListExample */,
+				2CCED0B42AD8549E008F2BD3 /* ListAndTapEvent */,
 				2CCED0B32AD8549E008F2BD3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,22 +47,22 @@
 		2CCED0B32AD8549E008F2BD3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2CCED0B22AD8549E008F2BD3 /* ListAndCustomType.app */,
+				2CCED0B22AD8549E008F2BD3 /* ListAndTapEvent.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2CCED0B42AD8549E008F2BD3 /* ListExample */ = {
+		2CCED0B42AD8549E008F2BD3 /* ListAndTapEvent */ = {
 			isa = PBXGroup;
 			children = (
 				2C984C612CD1513300632B5D /* Movie.swift */,
 				2CCED0B52AD8549E008F2BD3 /* ListExampleApp.swift */,
 				2CCED0B72AD8549E008F2BD3 /* ContentView.swift */,
-				2C984C632CD151E500632B5D /* MovieCell.swift */,
+				2C984C632CD151E500632B5D /* MovieItemView.swift */,
 				2CCED0B92AD8549F008F2BD3 /* Assets.xcassets */,
 				2CCED0BB2AD8549F008F2BD3 /* Preview Content */,
 			);
-			path = ListExample;
+			path = ListAndTapEvent;
 			sourceTree = "<group>";
 		};
 		2CCED0BB2AD8549F008F2BD3 /* Preview Content */ = {
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2CCED0B12AD8549E008F2BD3 /* ListAndCustomType */ = {
+		2CCED0B12AD8549E008F2BD3 /* ListAndTapEvent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CCED0C02AD8549F008F2BD3 /* Build configuration list for PBXNativeTarget "ListAndCustomType" */;
+			buildConfigurationList = 2CCED0C02AD8549F008F2BD3 /* Build configuration list for PBXNativeTarget "ListAndTapEvent" */;
 			buildPhases = (
 				2CCED0AE2AD8549E008F2BD3 /* Sources */,
 				2CCED0AF2AD8549E008F2BD3 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = ListAndCustomType;
+			name = ListAndTapEvent;
 			productName = ListExample;
-			productReference = 2CCED0B22AD8549E008F2BD3 /* ListAndCustomType.app */;
+			productReference = 2CCED0B22AD8549E008F2BD3 /* ListAndTapEvent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2CCED0AD2AD8549E008F2BD3 /* Build configuration list for PBXProject "ListAndCustomType" */;
+			buildConfigurationList = 2CCED0AD2AD8549E008F2BD3 /* Build configuration list for PBXProject "ListAndTapEvent" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2CCED0B12AD8549E008F2BD3 /* ListAndCustomType */,
+				2CCED0B12AD8549E008F2BD3 /* ListAndTapEvent */,
 			);
 		};
 /* End PBXProject section */
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CCED0B82AD8549E008F2BD3 /* ContentView.swift in Sources */,
-				2C984C642CD151E500632B5D /* MovieCell.swift in Sources */,
+				2C984C642CD151E500632B5D /* MovieItemView.swift in Sources */,
 				2CCED0B62AD8549E008F2BD3 /* ListExampleApp.swift in Sources */,
 				2C984C622CD1513300632B5D /* Movie.swift in Sources */,
 			);
@@ -279,7 +279,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ListExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ListAndTapEvent/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ListExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ListAndTapEvent/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -331,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CCED0AD2AD8549E008F2BD3 /* Build configuration list for PBXProject "ListAndCustomType" */ = {
+		2CCED0AD2AD8549E008F2BD3 /* Build configuration list for PBXProject "ListAndTapEvent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCED0BE2AD8549F008F2BD3 /* Debug */,
@@ -340,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CCED0C02AD8549F008F2BD3 /* Build configuration list for PBXNativeTarget "ListAndCustomType" */ = {
+		2CCED0C02AD8549F008F2BD3 /* Build configuration list for PBXNativeTarget "ListAndTapEvent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCED0C12AD8549F008F2BD3 /* Debug */,

@@ -10,12 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            List {
-                ForEach(movies) { movie in
-                    MovieCell(movie: movie)
-                    .onTapGesture {
-                        print("Cell Touched ", movie.title)
-                    }
+            List(movies) { movie in
+                MovieItemView(movie: movie)
+                .onTapGesture {
+                    print("Tapped: ", movie.title)
                 }
             }
             .listStyle(.plain) // grouped

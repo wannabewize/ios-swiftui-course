@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct MovieCell: View {
+struct MovieItemView: View {
     let movie: Movie
     
     var body: some View {
@@ -26,6 +26,6 @@ struct MovieCell: View {
 }
 
 #Preview {
-    MovieCell(movie: movies[0])
+    MovieItemView(movie: movies[0])
 }
 

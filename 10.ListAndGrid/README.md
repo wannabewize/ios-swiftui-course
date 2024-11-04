@@ -38,5 +38,8 @@ Grid, GridRow, ScrollView를 이용한 그리드 스타일 뷰 예제
 LazyVGrid, LazyHGrid를 이용한 그리드 예제
 
 
+## Movie Grid Example
+
+커스텀 데이터 모델과 GridView, TapGesture를 이용한 선택 이벤트 예제
 
 

@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4328FF2CD94B0200746867 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4328FE2CD94B0200746867 /* MovieItemView.swift */; };
 		2C984C462CD14B5E00632B5D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C984C452CD14B5E00632B5D /* Movie.swift */; };
-		2CEF8C3C2B74EA60009CC2BA /* GridExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF8C3B2B74EA60009CC2BA /* GridExampleApp.swift */; };
+		2CEF8C3C2B74EA60009CC2BA /* MovieGridExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF8C3B2B74EA60009CC2BA /* MovieGridExampleApp.swift */; };
 		2CEF8C3E2B74EA60009CC2BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF8C3D2B74EA60009CC2BA /* ContentView.swift */; };
 		2CEF8C402B74EA61009CC2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEF8C3F2B74EA61009CC2BA /* Assets.xcassets */; };
 		2CEF8C432B74EA61009CC2BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEF8C422B74EA61009CC2BA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4328FE2CD94B0200746867 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 		2C984C452CD14B5E00632B5D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		2CEF8C382B74EA60009CC2BA /* GridExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CEF8C3B2B74EA60009CC2BA /* GridExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridExampleApp.swift; sourceTree = "<group>"; };
+		2CEF8C382B74EA60009CC2BA /* MovieGridExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieGridExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CEF8C3B2B74EA60009CC2BA /* MovieGridExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridExampleApp.swift; sourceTree = "<group>"; };
 		2CEF8C3D2B74EA60009CC2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CEF8C3F2B74EA61009CC2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CEF8C422B74EA61009CC2BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -37,7 +39,7 @@
 		2CEF8C2F2B74EA60009CC2BA = {
 			isa = PBXGroup;
 			children = (
-				2CEF8C3A2B74EA60009CC2BA /* GridExample */,
+				2CEF8C3A2B74EA60009CC2BA /* MovieGridExample */,
 				2CEF8C392B74EA60009CC2BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,21 +47,22 @@
 		2CEF8C392B74EA60009CC2BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2CEF8C382B74EA60009CC2BA /* GridExample.app */,
+				2CEF8C382B74EA60009CC2BA /* MovieGridExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2CEF8C3A2B74EA60009CC2BA /* GridExample */ = {
+		2CEF8C3A2B74EA60009CC2BA /* MovieGridExample */ = {
 			isa = PBXGroup;
 			children = (
 				2C984C452CD14B5E00632B5D /* Movie.swift */,
-				2CEF8C3B2B74EA60009CC2BA /* GridExampleApp.swift */,
+				2C4328FE2CD94B0200746867 /* MovieItemView.swift */,
+				2CEF8C3B2B74EA60009CC2BA /* MovieGridExampleApp.swift */,
 				2CEF8C3D2B74EA60009CC2BA /* ContentView.swift */,
 				2CEF8C3F2B74EA61009CC2BA /* Assets.xcassets */,
 				2CEF8C412B74EA61009CC2BA /* Preview Content */,
 			);
-			path = GridExample;
+			path = MovieGridExample;
 			sourceTree = "<group>";
 		};
 		2CEF8C412B74EA61009CC2BA /* Preview Content */ = {
@@ -73,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2CEF8C372B74EA60009CC2BA /* GridExample */ = {
+		2CEF8C372B74EA60009CC2BA /* MovieGridExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CEF8C462B74EA61009CC2BA /* Build configuration list for PBXNativeTarget "GridExample" */;
+			buildConfigurationList = 2CEF8C462B74EA61009CC2BA /* Build configuration list for PBXNativeTarget "MovieGridExample" */;
 			buildPhases = (
 				2CEF8C342B74EA60009CC2BA /* Sources */,
 				2CEF8C352B74EA60009CC2BA /* Frameworks */,
@@ -85,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = GridExample;
+			name = MovieGridExample;
 			productName = GridExample;
-			productReference = 2CEF8C382B74EA60009CC2BA /* GridExample.app */;
+			productReference = 2CEF8C382B74EA60009CC2BA /* MovieGridExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2CEF8C332B74EA60009CC2BA /* Build configuration list for PBXProject "GridExample" */;
+			buildConfigurationList = 2CEF8C332B74EA60009CC2BA /* Build configuration list for PBXProject "MovieGridExample" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2CEF8C372B74EA60009CC2BA /* GridExample */,
+				2CEF8C372B74EA60009CC2BA /* MovieGridExample */,
 			);
 		};
 /* End PBXProject section */
@@ -140,8 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4328FF2CD94B0200746867 /* MovieItemView.swift in Sources */,
 				2CEF8C3E2B74EA60009CC2BA /* ContentView.swift in Sources */,
-				2CEF8C3C2B74EA60009CC2BA /* GridExampleApp.swift in Sources */,
+				2CEF8C3C2B74EA60009CC2BA /* MovieGridExampleApp.swift in Sources */,
 				2C984C462CD14B5E00632B5D /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +279,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GridExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MovieGridExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -303,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GridExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MovieGridExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -327,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CEF8C332B74EA60009CC2BA /* Build configuration list for PBXProject "GridExample" */ = {
+		2CEF8C332B74EA60009CC2BA /* Build configuration list for PBXProject "MovieGridExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CEF8C442B74EA61009CC2BA /* Debug */,
@@ -336,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CEF8C462B74EA61009CC2BA /* Build configuration list for PBXNativeTarget "GridExample" */ = {
+		2CEF8C462B74EA61009CC2BA /* Build configuration list for PBXNativeTarget "MovieGridExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CEF8C472B74EA61009CC2BA /* Debug */,

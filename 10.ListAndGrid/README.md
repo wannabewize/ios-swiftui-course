@@ -1,4 +1,4 @@
-# 목록형 씬
+# 목록형 스타일
 
 ## Static List Example
 
@@ -27,6 +27,16 @@ List 내
 
 [스크린샷](./Resources/list-editing.png)
 
-## Grid Example
+# 그리드 스타일
 
-그리드 스타일의 뷰
+## Grid and GridRow Example
+
+Grid, GridRow, ScrollView를 이용한 그리드 스타일 뷰 예제
+
+## Lazy Grid Example
+
+LazyVGrid, LazyHGrid를 이용한 그리드 예제
+
+
+
+

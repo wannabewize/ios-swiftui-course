@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		2C432A952CDA7BEE00746867 /* NavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C432AD42CDA8D6C00746867 /* TabBarCustomization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarCustomization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2C432A972CDA7BEE00746867 /* NavigationBar */ = {
+		2C432AD62CDA8D6C00746867 /* TabBarCustomization */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NavigationBar;
+			path = TabBarCustomization;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C432A922CDA7BEE00746867 /* Frameworks */ = {
+		2C432AD12CDA8D6C00746867 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C432A8C2CDA7BEE00746867 = {
+		2C432ACB2CDA8D6C00746867 = {
 			isa = PBXGroup;
 			children = (
-				2C432A972CDA7BEE00746867 /* NavigationBar */,
-				2C432A962CDA7BEE00746867 /* Products */,
+				2C432AD62CDA8D6C00746867 /* TabBarCustomization */,
+				2C432AD52CDA8D6C00746867 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2C432A962CDA7BEE00746867 /* Products */ = {
+		2C432AD52CDA8D6C00746867 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C432A952CDA7BEE00746867 /* NavigationBar.app */,
+				2C432AD42CDA8D6C00746867 /* TabBarCustomization.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C432A942CDA7BEE00746867 /* NavigationBar */ = {
+		2C432AD32CDA8D6C00746867 /* TabBarCustomization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C432AA32CDA7BF000746867 /* Build configuration list for PBXNativeTarget "NavigationBar" */;
+			buildConfigurationList = 2C432AE22CDA8D6D00746867 /* Build configuration list for PBXNativeTarget "TabBarCustomization" */;
 			buildPhases = (
-				2C432A912CDA7BEE00746867 /* Sources */,
-				2C432A922CDA7BEE00746867 /* Frameworks */,
-				2C432A932CDA7BEE00746867 /* Resources */,
+				2C432AD02CDA8D6C00746867 /* Sources */,
+				2C432AD12CDA8D6C00746867 /* Frameworks */,
+				2C432AD22CDA8D6C00746867 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2C432A972CDA7BEE00746867 /* NavigationBar */,
+				2C432AD62CDA8D6C00746867 /* TabBarCustomization */,
 			);
-			name = NavigationBar;
+			name = TabBarCustomization;
 			packageProductDependencies = (
 			);
-			productName = NavigationBar;
-			productReference = 2C432A952CDA7BEE00746867 /* NavigationBar.app */;
+			productName = TabBarCustomization;
+			productReference = 2C432AD42CDA8D6C00746867 /* TabBarCustomization.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C432A8D2CDA7BEE00746867 /* Project object */ = {
+		2C432ACC2CDA8D6C00746867 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					2C432A942CDA7BEE00746867 = {
+					2C432AD32CDA8D6C00746867 = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
 			};
-			buildConfigurationList = 2C432A902CDA7BEE00746867 /* Build configuration list for PBXProject "NavigationBar" */;
+			buildConfigurationList = 2C432ACF2CDA8D6C00746867 /* Build configuration list for PBXProject "TabBarCustomization" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 2C432A8C2CDA7BEE00746867;
+			mainGroup = 2C432ACB2CDA8D6C00746867;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 2C432A962CDA7BEE00746867 /* Products */;
+			productRefGroup = 2C432AD52CDA8D6C00746867 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C432A942CDA7BEE00746867 /* NavigationBar */,
+				2C432AD32CDA8D6C00746867 /* TabBarCustomization */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C432A932CDA7BEE00746867 /* Resources */ = {
+		2C432AD22CDA8D6C00746867 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C432A912CDA7BEE00746867 /* Sources */ = {
+		2C432AD02CDA8D6C00746867 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2C432AA12CDA7BF000746867 /* Debug */ = {
+		2C432AE02CDA8D6D00746867 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -188,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		2C432AA22CDA7BF000746867 /* Release */ = {
+		2C432AE12CDA8D6D00746867 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,14 +244,14 @@
 			};
 			name = Release;
 		};
-		2C432AA42CDA7BF000746867 /* Debug */ = {
+		2C432AE32CDA8D6D00746867 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NavigationBar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TabBarCustomization/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -264,7 +264,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.lecture.NavigationBar;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.lecture.TabBarCustomization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -272,14 +272,14 @@
 			};
 			name = Debug;
 		};
-		2C432AA52CDA7BF000746867 /* Release */ = {
+		2C432AE42CDA8D6D00746867 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NavigationBar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TabBarCustomization/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -292,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.lecture.NavigationBar;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.wannabewize.lecture.TabBarCustomization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -303,25 +303,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C432A902CDA7BEE00746867 /* Build configuration list for PBXProject "NavigationBar" */ = {
+		2C432ACF2CDA8D6C00746867 /* Build configuration list for PBXProject "TabBarCustomization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C432AA12CDA7BF000746867 /* Debug */,
-				2C432AA22CDA7BF000746867 /* Release */,
+				2C432AE02CDA8D6D00746867 /* Debug */,
+				2C432AE12CDA8D6D00746867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C432AA32CDA7BF000746867 /* Build configuration list for PBXNativeTarget "NavigationBar" */ = {
+		2C432AE22CDA8D6D00746867 /* Build configuration list for PBXNativeTarget "TabBarCustomization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C432AA42CDA7BF000746867 /* Debug */,
-				2C432AA52CDA7BF000746867 /* Release */,
+				2C432AE32CDA8D6D00746867 /* Debug */,
+				2C432AE42CDA8D6D00746867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2C432A8D2CDA7BEE00746867 /* Project object */;
+	rootObject = 2C432ACC2CDA8D6C00746867 /* Project object */;
 }

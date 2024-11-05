@@ -1,11 +1,14 @@
 # Navigation
 
-## SwiftUI
 
 ### Basic Navigation
 
-- NavigationStack 을 이용한 화면 전환
+- NavigationStack 을 이용한 계층형 내비 구조
+- NavigationLink와 navigationDestination 을 이용한 뷰 전환
 - 화면 전환 시 데이터 전달하기
+
+### Navigation Path
+
 - NavigationPath를 이용해서 NavigationStack 코드로 제어하기
 
 ### Shared DataModel

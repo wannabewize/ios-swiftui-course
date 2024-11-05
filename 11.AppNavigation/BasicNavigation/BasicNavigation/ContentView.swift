@@ -8,47 +8,60 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var navPath = NavigationPath()
-    
-    @State var value: Float = 5
     var body: some View {
-        NavigationStack(path: $navPath) {
-            
+        NavigationStack() {
             VStack(spacing: 20) {
                 
-                HStack {
-                    Slider(value: $value, in: 1...10, step: 1)
-                    Text("\(Int(value))")
-                }
-                // 텍스트 기반
-                NavigationLink("이동") {
-                    DetailView(navPath: $navPath, passedValue: Int(value))
+                Text("NavigationLink와 Destination")
+                    .font(.headline)
+                
+                NavigationLink("Detail View 이동, 1 전달") {
+                    DetailView(passedValue: 1)
                 }
                 
                 NavigationLink {
-                    DetailView(navPath: $navPath, passedValue: Int(value))
+                    DetailView(passedValue: 2)
                 } label: {
                     HStack {
-                        Text("상세 뷰로 이동")
-                        Image(systemName: "arrow.right")
+                        Text("Detail View 이동, 2 전달")
+                        Image(systemName: "chevron.right")
                     }
                 }
+
+                Text("NavigationLink와 navigationDestination")
+                    .font(.headline)
                 
                 // navigationDestination과 연결 Int.self
-                NavigationLink(value: 111) {
-                    Text("111")
+                NavigationLink(value: 100) {
+                    Text("Detail View 이동, 100 전달, Int Type")
                 }
-                NavigationLink(value: 222) {
-                    Text("222")
+                NavigationLink(value: 101) {
+                    Text("Detail View 이동, 101 전달, Int Type")
                 }
                 // 대응하는 navigationDestination이 없으므로 동작 없음
-                NavigationLink(value: "333") {
-                    Text("333")
+                NavigationLink(value: "111") {
+                    Text("Detail View 이동, 111 전달, String Type")
+                }
+                NavigationLink(value: "112") {
+                    Text("Detail View 이동, 112 전달, String Type")
+                }
+                
+                // Double Type
+                NavigationLink(value: 0.1) {
+                    Text("Detail View 이동, 0.1 전달, Double Type")
                 }
             }
             // value가 Int 타입인 NavigationLink와 동작
             .navigationDestination(for: Int.self, destination: { item in
-                DetailView(navPath: $navPath, passedValue: item)
+                DetailView(passedValue: item)
+            })
+            .navigationDestination(for: String.self, destination: { item in
+                if let value = Int(item) {
+                    DetailView(passedValue: value)
+                }
+                else {
+                    Text("Error")
+                }
             })
             .padding(.horizontal, 40)
             // 내비게이션 바 - 뷰 이름

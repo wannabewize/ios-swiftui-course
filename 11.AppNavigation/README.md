@@ -10,6 +10,7 @@
 ### Navigation Path
 
 - NavigationPath를 이용해서 NavigationStack 코드로 제어하기
+- 스택 카운트, 코드로 뒤로 이동, 코드로 앞으로 이동
 
 ### Shared DataModel
 

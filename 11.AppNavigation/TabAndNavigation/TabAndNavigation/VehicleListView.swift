@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-struct VehicleCell: View {
+struct VehicleListLabel: View {
     var vehicle: Vehicle
     
     var body: some View {
@@ -34,7 +34,7 @@ struct VehicleListView: View {
                     NavigationLink {
                         VehicleDetailView(vehicle: vehicle)
                     } label: {
-                        VehicleCell(vehicle: vehicle)
+                        VehicleListLabel(vehicle: vehicle)
                     }
                 }
             }

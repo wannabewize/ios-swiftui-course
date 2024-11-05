@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2CD617682AEEF05A0033657C /* TabBasedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBasedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD617682AEEF05A0033657C /* BasicTabBasedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicTabBasedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD6176B2AEEF05A0033657C /* TabBasedAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBasedAppApp.swift; sourceTree = "<group>"; };
 		2CD6176D2AEEF05A0033657C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CD6176F2AEEF05B0033657C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 		2CD6175F2AEEF05A0033657C = {
 			isa = PBXGroup;
 			children = (
-				2CD6176A2AEEF05A0033657C /* TabBasedApp */,
+				2CD6176A2AEEF05A0033657C /* BasicTabBasedApp */,
 				2CD617692AEEF05A0033657C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,12 +45,12 @@
 		2CD617692AEEF05A0033657C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2CD617682AEEF05A0033657C /* TabBasedApp.app */,
+				2CD617682AEEF05A0033657C /* BasicTabBasedApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2CD6176A2AEEF05A0033657C /* TabBasedApp */ = {
+		2CD6176A2AEEF05A0033657C /* BasicTabBasedApp */ = {
 			isa = PBXGroup;
 			children = (
 				2CD6176B2AEEF05A0033657C /* TabBasedAppApp.swift */,
@@ -59,7 +59,7 @@
 				2CD617712AEEF05B0033657C /* Preview Content */,
 				2CD617792AEEF0FE0033657C /* ViewABC.swift */,
 			);
-			path = TabBasedApp;
+			path = BasicTabBasedApp;
 			sourceTree = "<group>";
 		};
 		2CD617712AEEF05B0033657C /* Preview Content */ = {
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2CD617672AEEF05A0033657C /* TabBasedApp */ = {
+		2CD617672AEEF05A0033657C /* BasicTabBasedApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CD617762AEEF05B0033657C /* Build configuration list for PBXNativeTarget "TabBasedApp" */;
+			buildConfigurationList = 2CD617762AEEF05B0033657C /* Build configuration list for PBXNativeTarget "BasicTabBasedApp" */;
 			buildPhases = (
 				2CD617642AEEF05A0033657C /* Sources */,
 				2CD617652AEEF05A0033657C /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = TabBasedApp;
+			name = BasicTabBasedApp;
 			productName = TabBasedApp;
-			productReference = 2CD617682AEEF05A0033657C /* TabBasedApp.app */;
+			productReference = 2CD617682AEEF05A0033657C /* BasicTabBasedApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2CD617632AEEF05A0033657C /* Build configuration list for PBXProject "TabBasedApp" */;
+			buildConfigurationList = 2CD617632AEEF05A0033657C /* Build configuration list for PBXProject "BasicTabBasedApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2CD617672AEEF05A0033657C /* TabBasedApp */,
+				2CD617672AEEF05A0033657C /* BasicTabBasedApp */,
 			);
 		};
 /* End PBXProject section */
@@ -275,7 +275,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TabBasedApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BasicTabBasedApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -303,7 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TabBasedApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BasicTabBasedApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -327,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CD617632AEEF05A0033657C /* Build configuration list for PBXProject "TabBasedApp" */ = {
+		2CD617632AEEF05A0033657C /* Build configuration list for PBXProject "BasicTabBasedApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CD617742AEEF05B0033657C /* Debug */,
@@ -336,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CD617762AEEF05B0033657C /* Build configuration list for PBXNativeTarget "TabBasedApp" */ = {
+		2CD617762AEEF05B0033657C /* Build configuration list for PBXNativeTarget "BasicTabBasedApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CD617772AEEF05B0033657C /* Debug */,

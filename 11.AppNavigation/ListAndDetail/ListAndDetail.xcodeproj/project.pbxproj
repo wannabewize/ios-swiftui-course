@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C432AB02CDA85AD00746867 /* VehicleListLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C432AAF2CDA85AD00746867 /* VehicleListLabel.swift */; };
 		2C853A6D2AEE9BBC00953B4C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C853A6C2AEE9BBC00953B4C /* Model.swift */; };
 		2C85B1E72AEE15D400E1E12F /* ListAndDetailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85B1E62AEE15D400E1E12F /* ListAndDetailApp.swift */; };
 		2C85B1E92AEE15D400E1E12F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85B1E82AEE15D400E1E12F /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C432AAF2CDA85AD00746867 /* VehicleListLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListLabel.swift; sourceTree = "<group>"; };
 		2C853A6C2AEE9BBC00953B4C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2C85B1E32AEE15D400E1E12F /* ListAndDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListAndDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85B1E62AEE15D400E1E12F /* ListAndDetailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAndDetailApp.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				2C85B1E62AEE15D400E1E12F /* ListAndDetailApp.swift */,
 				2C85B1E82AEE15D400E1E12F /* ContentView.swift */,
+				2C432AAF2CDA85AD00746867 /* VehicleListLabel.swift */,
 				2C853A6C2AEE9BBC00953B4C /* Model.swift */,
 				2CD6170D2AEEBBB40033657C /* VehicleDetailView.swift */,
 				2CD6170F2AEEC48A0033657C /* WebView.swift */,
@@ -151,6 +154,7 @@
 				2C853A6D2AEE9BBC00953B4C /* Model.swift in Sources */,
 				2C85B1E92AEE15D400E1E12F /* ContentView.swift in Sources */,
 				2C85B1E72AEE15D400E1E12F /* ListAndDetailApp.swift in Sources */,
+				2C432AB02CDA85AD00746867 /* VehicleListLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

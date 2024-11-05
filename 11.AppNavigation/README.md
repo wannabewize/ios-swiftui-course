@@ -12,16 +12,21 @@
 - NavigationPath를 이용해서 NavigationStack 코드로 제어하기
 - 스택 카운트, 코드로 뒤로 이동, 코드로 앞으로 이동
 
+### NavigationBar
+
+- NavigationBar 커스터마이징
+
+### List and Detail
+
+- NavigationStack과 List를 이용해서 목록 뷰에서 상세 뷰 전환
+- UIViewPresentable을 이용해서 UIKit의 뷰(WebView)를 SwiftUI 에서 사용하기
+
 ### Shared DataModel
 
 - Observable과 Publish 를 이용한 공유 데이터 모델 정의
 - ObservedObject를 이용해서 공유 데이터 접근하기
 - EnvironmentObject를 이용해서 공유 데이터 접근하기
 
-### List and Detail
-
-- NavigationStack과 List를 이용해서 목록 뷰에서 상세 뷰 전환
-- UIViewPresentable을 이용해서 UIKit의 뷰(WebView)를 SwiftUI 에서 사용하기
 
 ### Tab Based app
 

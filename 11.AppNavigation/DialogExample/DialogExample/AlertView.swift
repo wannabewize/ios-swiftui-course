@@ -13,6 +13,7 @@ struct AlertView: View {
     @State var isButtonRoleAlertVisible = false
     @State var isTextInputAlertVisible = false
     @State var isManyTextFieldAlertVisible = false
+    @State var isNoActionAlertVisible = false
     @State var textInput: String = ""
     
     @State var isLoginAlertVisible = false
@@ -93,6 +94,12 @@ struct AlertView: View {
                 TextField("Input4", text: $textInput)
             } message: {
                 Text("Many TextField")
+            }
+            
+            Button("No Action Alert") {
+                isNoActionAlertVisible = true
+            }
+            .alert("No Actions", isPresented: $isNoActionAlertVisible) {                
             }
             
             Spacer()

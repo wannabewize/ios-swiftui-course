@@ -10,7 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            AlertView()
+            NavigationStack {
+                AlertView()
+                    .navigationTitle("Alert")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbarBackground(Color.gray, for: .navigationBar)
+                    .toolbarBackgroundVisibility(.visible, for: .navigationBar)
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Button("Right Button") { print("Right Button") }
+                        }
+                    }
+            }
                 .tabItem {
                     Label("Alert", systemImage: "a.circle")
                 }

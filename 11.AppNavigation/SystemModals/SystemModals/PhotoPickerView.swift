@@ -13,7 +13,7 @@ struct PhotoPickerView: View {
     
     @State var selectedImage: Image?
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             PhotosPicker("Photo Picker", selection: $selectedPicture)
                 .onChange(of: selectedPicture) { oldValue, newValue in
                     print("photo changed")
@@ -32,6 +32,7 @@ struct PhotoPickerView: View {
                         }
                     })
                 }
+            
             if let image = selectedImage {
                 image
                     .resizable()
@@ -43,6 +44,8 @@ struct PhotoPickerView: View {
                     .padding(50)
                     .border(.gray, width: 0.7)
             }
+            
+            Spacer()
         }
         .padding()
     }}

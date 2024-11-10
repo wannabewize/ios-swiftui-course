@@ -41,8 +41,6 @@ struct ModalView:View {
             Text(data)
                 .font(.title)
             
-            Text("모달 출력? \(isPresented)")
-            
             Spacer()
         }        
     }

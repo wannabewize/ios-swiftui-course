@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ModalView:View {
-    @Environment(\.isPresented) var isPrented
+    @Environment(\.isPresented) var isPresented
     @Environment(\.dismiss) var dismiss
     
     var data: String
@@ -17,7 +17,7 @@ struct ModalView:View {
         VStack(spacing: 20) {
             ZStack {
                 Text("Modal View")
-                    .font(.title)
+                    .font(.headline)
                 
                 HStack {
                     Spacer()
@@ -40,6 +40,8 @@ struct ModalView:View {
             
             Text(data)
                 .font(.title)
+            
+            Text("모달 출력? \(isPresented)")
             
             Spacer()
         }        

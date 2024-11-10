@@ -48,7 +48,14 @@
 - 데이트 피커
 - 사진 피커
 - File Export, File Import
+- Activity View ( wip )
 
+### Custom View Modal Example
+
+커스텀 뷰를 모달로 출력하기
+- sheet
+- cover
+- popup
 
 ## Common Data
 
@@ -57,3 +64,10 @@
 - Observable과 Publish 를 이용한 공유 데이터 모델 정의
 - ObservedObject를 이용해서 공유 데이터 접근하기
 - EnvironmentObject를 이용해서 공유 데이터 접근하기
+
+
+## 참고 자료
+
+모달 cheat sheet
+
+https://developer.apple.com/documentation/swiftui/modal-presentations

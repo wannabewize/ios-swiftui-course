@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2CB279422B5E52A200AA8453 /* Modal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB279422B5E52A200AA8453 /* ModalExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB279452B5E52A200AA8453 /* ModalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalApp.swift; sourceTree = "<group>"; };
 		2CB279472B5E52A200AA8453 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CB279492B5E52A300AA8453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB279532B5E52D600AA8453 /* README.md */,
-				2CB279442B5E52A200AA8453 /* Modal */,
+				2CB279442B5E52A200AA8453 /* ModalExample */,
 				2CB279432B5E52A200AA8453 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,12 +47,12 @@
 		2CB279432B5E52A200AA8453 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2CB279422B5E52A200AA8453 /* Modal.app */,
+				2CB279422B5E52A200AA8453 /* ModalExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2CB279442B5E52A200AA8453 /* Modal */ = {
+		2CB279442B5E52A200AA8453 /* ModalExample */ = {
 			isa = PBXGroup;
 			children = (
 				2CB279452B5E52A200AA8453 /* ModalApp.swift */,
@@ -61,7 +61,7 @@
 				2CB2794B2B5E52A300AA8453 /* Preview Content */,
 				2CB279562B5E906300AA8453 /* ModalView.swift */,
 			);
-			path = Modal;
+			path = ModalExample;
 			sourceTree = "<group>";
 		};
 		2CB2794B2B5E52A300AA8453 /* Preview Content */ = {
@@ -75,9 +75,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2CB279412B5E52A200AA8453 /* Modal */ = {
+		2CB279412B5E52A200AA8453 /* ModalExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CB279502B5E52A300AA8453 /* Build configuration list for PBXNativeTarget "Modal" */;
+			buildConfigurationList = 2CB279502B5E52A300AA8453 /* Build configuration list for PBXNativeTarget "ModalExample" */;
 			buildPhases = (
 				2CB2793E2B5E52A200AA8453 /* Sources */,
 				2CB2793F2B5E52A200AA8453 /* Frameworks */,
@@ -87,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = Modal;
+			name = ModalExample;
 			productName = Modal;
-			productReference = 2CB279422B5E52A200AA8453 /* Modal.app */;
+			productReference = 2CB279422B5E52A200AA8453 /* ModalExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2CB2793D2B5E52A200AA8453 /* Build configuration list for PBXProject "Modal" */;
+			buildConfigurationList = 2CB2793D2B5E52A200AA8453 /* Build configuration list for PBXProject "ModalExample" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2CB279412B5E52A200AA8453 /* Modal */,
+				2CB279412B5E52A200AA8453 /* ModalExample */,
 			);
 		};
 /* End PBXProject section */
@@ -277,7 +277,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Modal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ModalExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -308,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Modal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ModalExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -335,7 +335,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CB2793D2B5E52A200AA8453 /* Build configuration list for PBXProject "Modal" */ = {
+		2CB2793D2B5E52A200AA8453 /* Build configuration list for PBXProject "ModalExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CB2794E2B5E52A300AA8453 /* Debug */,
@@ -344,7 +344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CB279502B5E52A300AA8453 /* Build configuration list for PBXNativeTarget "Modal" */ = {
+		2CB279502B5E52A300AA8453 /* Build configuration list for PBXNativeTarget "ModalExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CB279512B5E52A300AA8453 /* Debug */,

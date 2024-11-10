@@ -42,9 +42,7 @@ struct ModalView:View {
                 .font(.title)
             
             Spacer()
-        }
-        .background(Color.gray)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }        
     }
 }
 

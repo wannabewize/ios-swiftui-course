@@ -57,15 +57,6 @@
 - cover
 - popup
 
-## Common Data
-
-### Shared DataModel
-
-- Observable과 Publish 를 이용한 공유 데이터 모델 정의
-- ObservedObject를 이용해서 공유 데이터 접근하기
-- EnvironmentObject를 이용해서 공유 데이터 접근하기
-
-
 ## 참고 자료
 
 모달 cheat sheet

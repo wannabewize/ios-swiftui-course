@@ -9,14 +9,20 @@ struct ObservedObjectView: View {
     @ObservedObject var provider: SharedModel
     
     var body: some View {
-        HStack {
+        VStack(spacing: 10) {
             Text("Observed Object value : \(provider.sharedValue)")
-            Spacer()
-            Button(action: {
-                provider.asyncIncOne()
-            }, label: {
-                Image(systemName: "plus.circle")
-            })
+            
+            HStack(spacing: 20) {
+                Button("+1(sync)") {
+                    provider.asyncIncrese()
+                }
+                .buttonStyle(.borderedProminent)
+                
+                Button("+1(async)") {
+                    provider.increase()
+                }
+                .buttonStyle(.borderedProminent)
+            }
         }
     }
 }

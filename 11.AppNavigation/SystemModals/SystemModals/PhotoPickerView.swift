@@ -14,6 +14,7 @@ struct PhotoPickerView: View {
     @State var selectedImage: Image?
     var body: some View {
         VStack(spacing: 20) {
+            
             PhotosPicker("Photo Picker", selection: $selectedPicture)
                 .onChange(of: selectedPicture) { oldValue, newValue in
                     print("photo changed")

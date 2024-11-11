@@ -37,6 +37,8 @@ struct FileExportView: View {
             case .failure(let error):
                 print("error :", error)
             }
+        } onCancellation: {
+            print("cancel export")
         }
         .fileImporter(isPresented: $isImportDialogVisible, allowedContentTypes: [.text], onCompletion: { result in
             switch result {

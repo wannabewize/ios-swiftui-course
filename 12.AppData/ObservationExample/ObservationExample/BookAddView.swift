@@ -26,6 +26,12 @@ struct BookAddView: View {
                     bookTitle = ""
                 }
                 .disabled(bookTitle.count == 0)
+                
+                Button("Add Async") {
+                    library.addBookAsync(title: bookTitle)
+                    bookTitle = ""
+                }
+                .disabled(bookTitle.count == 0)
             }
         }
     }

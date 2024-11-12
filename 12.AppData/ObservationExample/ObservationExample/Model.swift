@@ -27,4 +27,11 @@ class Library {
     func addBook(title: String) {
         books.append(Book(title: title))
     }
+    
+    // 1초후 실행. 비동기 동작
+    func addBookAsync(title: String) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            self.addBook(title: title)
+        }
+    }
 }

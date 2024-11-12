@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		2C005F1D2CE38AF700FB0878 /* ObservationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C005F1D2CE38AF700FB0878 /* ObservationMacroExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationMacroExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2C005F1F2CE38AF700FB0878 /* ObservationExample */ = {
+		2C005F1F2CE38AF700FB0878 /* ObservationMacroExample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ObservationExample;
+			path = ObservationMacroExample;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		2C005F142CE38AF700FB0878 = {
 			isa = PBXGroup;
 			children = (
-				2C005F1F2CE38AF700FB0878 /* ObservationExample */,
+				2C005F1F2CE38AF700FB0878 /* ObservationMacroExample */,
 				2C005F1E2CE38AF700FB0878 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		2C005F1E2CE38AF700FB0878 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C005F1D2CE38AF700FB0878 /* ObservationExample.app */,
+				2C005F1D2CE38AF700FB0878 /* ObservationMacroExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C005F1C2CE38AF700FB0878 /* ObservationExample */ = {
+		2C005F1C2CE38AF700FB0878 /* ObservationMacroExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C005F2B2CE38AF800FB0878 /* Build configuration list for PBXNativeTarget "ObservationExample" */;
+			buildConfigurationList = 2C005F2B2CE38AF800FB0878 /* Build configuration list for PBXNativeTarget "ObservationMacroExample" */;
 			buildPhases = (
 				2C005F192CE38AF700FB0878 /* Sources */,
 				2C005F1A2CE38AF700FB0878 /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2C005F1F2CE38AF700FB0878 /* ObservationExample */,
+				2C005F1F2CE38AF700FB0878 /* ObservationMacroExample */,
 			);
-			name = ObservationExample;
+			name = ObservationMacroExample;
 			packageProductDependencies = (
 			);
 			productName = ObservationExample;
-			productReference = 2C005F1D2CE38AF700FB0878 /* ObservationExample.app */;
+			productReference = 2C005F1D2CE38AF700FB0878 /* ObservationMacroExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C005F182CE38AF700FB0878 /* Build configuration list for PBXProject "ObservationExample" */;
+			buildConfigurationList = 2C005F182CE38AF700FB0878 /* Build configuration list for PBXProject "ObservationMacroExample" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C005F1C2CE38AF700FB0878 /* ObservationExample */,
+				2C005F1C2CE38AF700FB0878 /* ObservationMacroExample */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +251,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ObservationExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ObservationMacroExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -280,7 +280,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ObservationExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ObservationMacroExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -305,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C005F182CE38AF700FB0878 /* Build configuration list for PBXProject "ObservationExample" */ = {
+		2C005F182CE38AF700FB0878 /* Build configuration list for PBXProject "ObservationMacroExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C005F292CE38AF800FB0878 /* Debug */,
@@ -314,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C005F2B2CE38AF800FB0878 /* Build configuration list for PBXNativeTarget "ObservationExample" */ = {
+		2C005F2B2CE38AF800FB0878 /* Build configuration list for PBXNativeTarget "ObservationMacroExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C005F2C2CE38AF800FB0878 /* Debug */,

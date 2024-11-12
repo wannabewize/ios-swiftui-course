@@ -8,6 +8,10 @@ import SwiftUI
 class Counter: ObservableObject {
     @Published var value = 0
     
+    init() {
+        print("Counter instance initialized")
+    }
+    
     func increase() {
         value += 1
     }

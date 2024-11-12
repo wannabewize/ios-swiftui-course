@@ -2,8 +2,6 @@
 //  BookListView.swift
 //  ObservationExample
 //
-//  Created by wannabewize on 11/12/24.
-//
 
 import SwiftUI
 

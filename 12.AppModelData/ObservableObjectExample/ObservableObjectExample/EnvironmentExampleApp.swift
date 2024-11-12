@@ -8,7 +8,7 @@ import SwiftUI
 
 @main
 struct EnvironmentExampleApp: App {
-    @State var counter = Counter()
+    @StateObject var counter = Counter()
     
     var body: some Scene {
         WindowGroup {

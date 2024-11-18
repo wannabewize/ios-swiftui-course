@@ -3,17 +3,27 @@
  */
 import Foundation
 
+//
+// Enum 으로 에러 정의하기
 enum InputError : Error {
     case notPositive
 }
 
+// 에러 발생시키기
+do {
+    throw InputError.notPositive
+}
+catch {
+    print("InputError.notPositive!")
+}
+
+// 에러가 발생할 수 있는 함수
 func inputOnlyPositive(_ value: Int) throws {
     guard value > 0 else {
         throw InputError.notPositive
     }
     print("OK")
 }
-
 
 enum NotZeroError : Error {
     case below(String, Int)
@@ -52,4 +62,25 @@ catch let NotZeroError.below(msg, value) {
     print("error :", msg, "value :", value)
 }
 
+
+//
+// 구조체나 클래스를 이용한 에러 정의
+struct StructError: Error {
+    let code: Int
+    let message: String
+}
+
+class ClassError: Error {
+    
+}
+
+do {
+    throw StructError(code: 100, message: "Error")
+}
+catch let error as StructError {
+    print("Struct Error: ", error.code)
+}
+catch {
+    print("Other error")
+}
 

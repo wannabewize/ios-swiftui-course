@@ -2,6 +2,10 @@
  * 제네릭
  */
 
+
+let intArray: Array<Int> = [1, 2, 3]
+let stringArray: Array<String> = ["one", "two", "three"]
+
 //
 // 제네릭 기반으로 동작하는 콜렉션
 var array1 = Array<Int>()
@@ -77,31 +81,6 @@ hospital.hospitalize( Human(name: "아픈사람"))
 let animalClinic = Hospital<Pet>()
 animalClinic.hospitalize(Pet.dog)
 animalClinic.hospitalize(Pet.cat)
-
-//
-// 제네릭과 프로토타입, associatedtype 으로 명시
-protocol MyProtocol<T> {
-    associatedtype T
-    
-    func show(value: T)
-}
-
-// 구현시 타입 명시
-
-struct MyStruct: MyProtocol {
-    func show(value: String) {
-        print("string value is \(value)")
-    }
-}
-
-// typealias를 이용한 구현
-class MyClass: MyProtocol {
-    typealias T = Int
-    
-    func show(value: T) {
-        print("Int value is \(value)")
-    }
-}
 
 
 

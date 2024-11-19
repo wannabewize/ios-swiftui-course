@@ -34,10 +34,27 @@ struct ContentView: View {
                     }
                 }
                 
-                Button("URLSession") {
+                Button("URLSession1") {
                     image = nil
-                    sessionBasedTask(urlStr) { downloaded in
+                    sessionBasedTask(urlStr) { downloaded, error in
+                        guard error == nil else {
+                            // 에러처리
+                            return
+                        }
                         self.image = downloaded
+                    }
+                }
+                
+                Button("URLSession2") {
+                    image = nil
+                    sessionBasedTask2(urlStr) { result in
+                        switch result {
+                        case .success(let image):
+                            self.image = image
+                        case .failure(let error):
+                            // 에러처리
+                            print("Error :", error)
+                        }
                     }
                 }
                 

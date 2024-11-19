@@ -32,7 +32,7 @@ func gcdDownloadImage(_ urlStr: String, completion: @escaping (UIImage?) -> Void
 
 
 // URLSession 기반의 비동기 네트워크
-func sessionBasedTask(_ urlStr: String, completion: @escaping (UIImage?) -> Void) {
+func sessionBasedTask(_ urlStr: String, completion: @escaping (UIImage?, Error?) -> Void) {
     let url = URL(string: urlStr)!
     let request = URLRequest(url: url)
     let task = URLSession.shared.dataTask(with: request) { data, response, error in
@@ -40,7 +40,27 @@ func sessionBasedTask(_ urlStr: String, completion: @escaping (UIImage?) -> Void
 
         if let data = data,
            let image = UIImage(data: data) {
-            completion(image)
+            completion(image, nil)
+        }
+    }
+    task.resume()
+}
+
+// URLSession 기반의 비동기 네트워크
+func sessionBasedTask2(_ urlStr: String, completion: @escaping (Result<UIImage, Error>) -> Void) {
+    let url = URL(string: urlStr)!
+    let request = URLRequest(url: url)
+    let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        print("Download Done", Thread.isMainThread)
+        
+        guard error == nil else {
+            completion( Result.failure(error!))
+            return
+        }
+
+        if let data = data,
+           let image = UIImage(data: data) {
+            completion( Result.success(image) )
         }
     }
     task.resume()

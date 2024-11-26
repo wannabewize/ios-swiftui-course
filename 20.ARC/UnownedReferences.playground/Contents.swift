@@ -30,8 +30,11 @@ let card: CreditCard? = CreditCard(title: "MY APT Card", customer: rose!)
 
 rose = nil
 
+print("credit card :", card)
+print("credit card holder :", card?.customer)
+
 print("DONE")
 
-print("credit card :", card)
+
 
 

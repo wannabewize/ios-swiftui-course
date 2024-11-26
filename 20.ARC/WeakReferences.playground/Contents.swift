@@ -31,7 +31,7 @@ rose?.apartment = apt
 apt?.tenant = rose
 
 rose = nil
-print("tenent of apt :", apt?.tenant) // nil
+print("tenent of apt :", apt?.tenant) // 참조된 객체가 해제되면 자동으로 nil
 
 print("Done")
 

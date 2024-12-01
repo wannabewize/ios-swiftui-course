@@ -135,8 +135,8 @@ struct ContentView: View {
             let jsonPath: String? = Bundle.main.path(forResource: "Data", ofType: "json")
             let jsonUrl: URL? = Bundle.main.url(forResource: "Data", withExtension: "json")
             
-            print("json path:", jsonPath)
-            print("json url:", jsonUrl)
+            print("json path:", jsonPath ?? "nil")
+            print("json url:", jsonUrl ?? "nil")
             
             print("Data Container", NSHomeDirectory())
             

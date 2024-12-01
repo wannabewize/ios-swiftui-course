@@ -18,7 +18,7 @@ struct ContentView: View {
             HStack(spacing: 20) {
                 Spacer()
                 Button("읽기") {
-                    let setting = UserDefaults.standard
+                    let setting = UserDefaults.standard                    
 
                     if let title = setting.string(forKey: "TITLE"),
                         let date = setting.value(forKey: "DATE") as? Date,
@@ -66,6 +66,9 @@ struct ContentView: View {
             Spacer()
         }
         .padding()
+        .onAppear {
+            print("Home: " + NSHomeDirectory())
+        }
     }
 }
 

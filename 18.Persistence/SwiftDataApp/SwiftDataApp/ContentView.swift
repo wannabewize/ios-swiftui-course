@@ -11,17 +11,45 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @State var isNewTodoAlertVisible = false
+    @State var isTitleEditAlertVisible = false
+    @State var newTitle = ""
+    @State var todoForEdit: Todo?
     @Query private var todos: [Todo]
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(todos) { todo in
-                    VStack(alignment: .center) {
-                        Text(todo.title)
-                            .font(.headline)
-                        Text(todo.dueDate, format: Date.FormatStyle(date: .abbreviated, time: .none))
-                            .font(.caption)
+                    HStack {
+                        VStack(alignment: .center) {
+                            Text(todo.title)
+                                .font(.headline)
+                            Text(todo.dueDate, format: Date.FormatStyle(date: .abbreviated, time: .none))
+                                .font(.caption)
+                        }
+                        Spacer()
+                        Button {
+                            todoForEdit = todo
+                            newTitle = todoForEdit!.title
+                            isTitleEditAlertVisible = true
+                        } label: {
+                            Image(systemName: "pencil")
+                        }
+                    }
+                    .alert("edit todo", isPresented: $isTitleEditAlertVisible) {
+                        TextField("title", text: $newTitle)
+                        Button("Cencel", role: .cancel) {
+                            newTitle = ""
+                        }
+                        Button("OK") {
+                            todoForEdit!.title = newTitle
+                            do {
+                                try modelContext.save()
+                            }
+                            catch {
+                                print("Error ", error)
+                            }                            
+                        }
                     }
                 }
                 .onDelete(perform: deleteItems)
